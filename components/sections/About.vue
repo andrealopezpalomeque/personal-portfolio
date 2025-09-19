@@ -107,6 +107,8 @@
 </template>
 
 <script setup lang="ts">
+import Icon from '~/components/Icon.vue'
+
 defineOptions({
   name: 'SectionsAbout'
 })

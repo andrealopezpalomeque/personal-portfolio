@@ -1,3 +1,5 @@
+import { readonly } from 'vue'
+
 export const useTheme = () => {
   const isDark = useCookie('theme-dark', {
     default: () => false

@@ -24,32 +24,32 @@
 
         <!-- Desktop Actions -->
         <div class="hidden md:flex items-center space-x-4">
-          <Button
+          <UiButton
             variant="ghost"
             size="sm"
             :icon="isDark ? 'ph:sun' : 'ph:moon'"
             @click="toggleTheme"
             class="p-2"
           />
-          <Button
+          <UiButton
             variant="primary"
             size="sm"
             href="#contact"
           >
             Contact
-          </Button>
+          </UiButton>
         </div>
 
         <!-- Mobile menu button -->
         <div class="md:hidden flex items-center space-x-2">
-          <Button
+          <UiButton
             variant="ghost"
             size="sm"
             :icon="isDark ? 'ph:sun' : 'ph:moon'"
             @click="toggleTheme"
             class="p-2"
           />
-          <Button
+          <UiButton
             variant="ghost"
             size="sm"
             :icon="isOpen ? 'ph:x' : 'ph:list'"
@@ -80,7 +80,7 @@
               {{ item.name }}
             </NuxtLink>
             <div class="pt-2 border-t border-gray-200 dark:border-gray-700">
-              <Button
+              <UiButton
                 variant="primary"
                 size="sm"
                 href="#contact"
@@ -88,7 +88,7 @@
                 @click="closeMobileMenu"
               >
                 Contact
-              </Button>
+              </UiButton>
             </div>
           </div>
         </div>
@@ -98,6 +98,8 @@
 </template>
 
 <script setup lang="ts">
+import { ref, watch } from 'vue'
+
 const { isDark, toggleTheme } = useTheme()
 const isOpen = ref(false)
 

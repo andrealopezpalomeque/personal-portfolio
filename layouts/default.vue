@@ -11,6 +11,8 @@
 </template>
 
 <script setup lang="ts">
+import { onMounted } from 'vue'
+
 const { initTheme } = useTheme()
 
 // Initialize theme on mount

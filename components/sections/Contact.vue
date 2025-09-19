@@ -246,6 +246,9 @@
 </template>
 
 <script setup lang="ts">
+import { ref, reactive } from 'vue'
+import Icon from '~/components/Icon.vue'
+
 const form = reactive({
   name: '',
   email: '',

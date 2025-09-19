@@ -11,6 +11,9 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
+import Icon from '~/components/Icon.vue'
+
 defineOptions({
   name: 'UiBadge'
 })

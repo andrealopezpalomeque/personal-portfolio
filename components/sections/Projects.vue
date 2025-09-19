@@ -186,7 +186,9 @@
 
 
 <script setup lang="ts">
+import { ref, computed } from 'vue'
 import type { Project } from '~/types'
+import Icon from '~/components/Icon.vue'
 
 defineOptions({
   name: 'SectionsProjects'

@@ -12,7 +12,7 @@
             Always excited to take on new challenges and collaborate on meaningful projects.
           </p>
           <div class="flex space-x-4">
-            <Button
+            <UiButton
               v-for="social in socialLinks"
               :key="social.name"
               :href="social.href"
@@ -73,7 +73,7 @@
             © {{ currentYear }} Portfolio. Built with Nuxt & Tailwind CSS.
           </p>
           <div class="flex items-center mt-4 md:mt-0">
-            <Button
+            <UiButton
               variant="ghost"
               size="sm"
               icon="ph:arrow-up"

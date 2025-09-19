@@ -92,6 +92,8 @@
 </template>
 
 <script setup lang="ts">
+import Icon from '~/components/Icon.vue'
+
 interface Props {
   name?: string
   title?: string

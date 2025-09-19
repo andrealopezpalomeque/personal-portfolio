@@ -150,7 +150,9 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
 import type { Skill } from '~/types'
+import Icon from '~/components/Icon.vue'
 
 defineOptions({
   name: 'SectionsSkills'
