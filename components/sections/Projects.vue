@@ -185,9 +185,8 @@
 </template>
 
 
-<script setup lang="ts">
+<script setup>
 import { ref, computed } from 'vue'
-import type { Project } from '~/types'
 import Icon from '~/components/Icon.vue'
 
 defineOptions({
@@ -195,7 +194,7 @@ defineOptions({
 })
 
 // Sample projects data
-const sampleProjects: Project[] = [
+const sampleProjects = [
   {
     id: '1',
     title: 'E-commerce Dashboard',
@@ -256,9 +255,7 @@ const sampleProjects: Project[] = [
   }
 ]
 
-const props = defineProps<{
-  projects?: Project[]
-}>()
+const props = defineProps()
 
 const activeFilter = ref('All')
 const showCount = ref(6)
@@ -286,7 +283,7 @@ const hasMoreProjects = computed(() => {
   return showCount.value < (props.projects?.length ?? projectsToUse.value.length)
 })
 
-const setFilter = (filter: string) => {
+const setFilter = (filter) => {
   activeFilter.value = filter
   showCount.value = 6
 }
@@ -295,14 +292,14 @@ const loadMoreProjects = () => {
   showCount.value += 6
 }
 
-const formatDate = (dateString: string) => {
+const formatDate = (dateString) => {
   const [year, month] = dateString.split('-')
   const date = new Date(parseInt(year || '0'), parseInt(month || '0') - 1)
   return date.toLocaleDateString('en-US', { year: 'numeric', month: 'short' })
 }
 
-const getCategoryFromTech = (tech: string) => {
-  const categoryMap: Record<string, string> = {
+const getCategoryFromTech = (tech) => {
+  const categoryMap = {
     'Vue.js': 'Web App',
     'React': 'Web App',
     'Nuxt.js': 'Web App',
@@ -317,7 +314,7 @@ const getCategoryFromTech = (tech: string) => {
   return categoryMap[tech] || 'Web App'
 }
 
-const openProjectModal = (project: Project) => {
+const openProjectModal = (project) => {
   // TODO: Implement project detail modal
   console.log('Opening project details for:', project.title)
 }

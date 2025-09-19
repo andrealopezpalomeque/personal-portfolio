@@ -149,9 +149,8 @@
   </section>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { computed } from 'vue'
-import type { Skill } from '~/types'
 import Icon from '~/components/Icon.vue'
 
 defineOptions({
@@ -169,7 +168,7 @@ const skillCategories = [
       { name: 'TypeScript', level: 'advanced', icon: 'logos:typescript-icon' },
       { name: 'Tailwind CSS', level: 'expert', icon: 'logos:tailwindcss-icon' },
       { name: 'HTML/CSS', level: 'expert' }
-    ] as Skill[]
+    ]
   },
   {
     name: 'Backend Development',
@@ -181,7 +180,7 @@ const skillCategories = [
       { name: 'Express.js', level: 'advanced' },
       { name: 'REST APIs', level: 'advanced' },
       { name: 'GraphQL', level: 'intermediate', icon: 'logos:graphql' }
-    ] as Skill[]
+    ]
   },
   {
     name: 'Database & DevOps',
@@ -193,7 +192,7 @@ const skillCategories = [
       { name: 'Docker', level: 'intermediate', icon: 'logos:docker-icon' },
       { name: 'Git/GitHub', level: 'advanced', icon: 'logos:git-icon' },
       { name: 'CI/CD', level: 'intermediate' }
-    ] as Skill[]
+    ]
   }
 ]
 
@@ -221,13 +220,13 @@ const currentlyLearning = [
   { name: 'Three.js', progress: 'Exploring 3D web', icon: 'logos:threejs' }
 ]
 
-const getLevelVariant = (level: string) => {
+const getLevelVariant = (level) => {
   const variants = {
     beginner: 'warning',
     intermediate: 'info',
     advanced: 'success',
     expert: 'primary'
   }
-  return variants[level as keyof typeof variants] || 'secondary'
+  return variants[level] || 'secondary'
 }
 </script>

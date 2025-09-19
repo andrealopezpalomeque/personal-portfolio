@@ -106,20 +106,14 @@
   </section>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import Icon from '~/components/Icon.vue'
 
 defineOptions({
   name: 'SectionsAbout'
 })
 
-interface Props {
-  aboutText?: string
-  backgroundText?: string
-  passionText?: string
-}
-
-const props = withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps(), {
   aboutText: "I'm a full-stack developer with a passion for creating digital experiences that are not only functional but also intuitive and engaging. With several years of experience in web development, I've had the opportunity to work on diverse projects ranging from e-commerce platforms to data visualization tools.",
   backgroundText: "My journey into programming started with curiosity and has evolved into a career I'm truly passionate about. I believe in writing clean, maintainable code and staying up-to-date with the latest technologies and best practices in the industry.",
   passionText: "When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community. I'm always excited to take on new challenges and collaborate on innovative projects."

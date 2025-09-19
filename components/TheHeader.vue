@@ -97,7 +97,7 @@
   </header>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { ref, watch } from 'vue'
 
 const { isDark, toggleTheme } = useTheme()

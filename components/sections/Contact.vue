@@ -245,7 +245,7 @@
   </section>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { ref, reactive } from 'vue'
 import Icon from '~/components/Icon.vue'
 
@@ -303,7 +303,7 @@ const submitForm = async () => {
 
     // Reset form
     Object.keys(form).forEach(key => {
-      form[key as keyof typeof form] = ''
+      form[key] = ''
     })
 
     // Show success message

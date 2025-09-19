@@ -28,7 +28,7 @@
   </component>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { computed } from 'vue'
 import Icon from '~/components/Icon.vue'
 
@@ -36,28 +36,13 @@ defineOptions({
   name: 'UiButton'
 })
 
-interface Props {
-  variant?: 'primary' | 'secondary' | 'outline' | 'ghost'
-  size?: 'sm' | 'md' | 'lg'
-  href?: string
-  to?: string
-  target?: string
-  rel?: string
-  disabled?: boolean
-  loading?: boolean
-  icon?: string
-  iconPosition?: 'left' | 'right'
-}
-
-const props = withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps(), {
   variant: 'primary',
   size: 'md',
   iconPosition: 'left'
 })
 
-const emit = defineEmits<{
-  click: [event: Event]
-}>()
+const emit = defineEmits(['click'])
 
 const tag = computed(() => {
   if (props.href) return 'a'
@@ -88,7 +73,7 @@ const buttonClasses = computed(() => {
   ].join(' ')
 })
 
-const handleClick = (event: Event) => {
+const handleClick = (event) => {
   if (!props.disabled && !props.loading) {
     emit('click', event)
   }

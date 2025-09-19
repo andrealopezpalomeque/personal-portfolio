@@ -18,21 +18,14 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { computed } from 'vue'
 
 defineOptions({
   name: 'UiCard'
 })
 
-interface Props {
-  title?: string
-  variant?: 'default' | 'elevated' | 'outlined'
-  padding?: boolean
-  hover?: boolean
-}
-
-const props = withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps(), {
   variant: 'default',
   padding: true,
   hover: true

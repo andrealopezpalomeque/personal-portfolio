@@ -91,16 +91,10 @@
   </section>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import Icon from '~/components/Icon.vue'
 
-interface Props {
-  name?: string
-  title?: string
-  description?: string
-}
-
-const props = withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps(), {
   name: 'Andrea Victoria',
   title: 'Full Stack Developer & UI/UX Enthusiast',
   description: 'I create beautiful, functional, and user-centered digital experiences that solve real-world problems. Passionate about clean code, modern design, and turning ideas into reality.'

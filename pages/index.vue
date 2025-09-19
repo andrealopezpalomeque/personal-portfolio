@@ -17,7 +17,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 // SEO and meta tags
 useSeoMeta({
   title: 'Andrea Victoria - Full Stack Developer & UI/UX Enthusiast',

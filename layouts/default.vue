@@ -10,7 +10,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { onMounted } from 'vue'
 
 const { initTheme } = useTheme()

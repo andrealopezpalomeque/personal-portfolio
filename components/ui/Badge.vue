@@ -10,7 +10,7 @@
   </span>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { computed } from 'vue'
 import Icon from '~/components/Icon.vue'
 
@@ -18,14 +18,7 @@ defineOptions({
   name: 'UiBadge'
 })
 
-interface Props {
-  variant?: 'primary' | 'secondary' | 'success' | 'warning' | 'error' | 'info'
-  size?: 'sm' | 'md' | 'lg'
-  icon?: string
-  outlined?: boolean
-}
-
-const props = withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps(), {
   variant: 'secondary',
   size: 'md',
   outlined: false
