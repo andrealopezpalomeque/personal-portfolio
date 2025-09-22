@@ -113,12 +113,13 @@ const realProjects = [
   },
   {
     id: '3',
-    title: 'BMI Calculator',
-    description: 'Mobile app developed in Swift using MVC architecture to calculate BMI with clean interface and health insights.',
-    technologies: ['Swift', 'iOS', 'MVC', 'HealthKit'],
-    githubUrl: 'https://github.com/andrealopezpalomeque/bmi-calculator',
-    featured: false,
-    completedDate: '2023-10'
+    title: 'InstalarPro - AC Technician Platform',
+    description: 'Comprehensive platform connecting air conditioner technicians with clients in Argentina/LATAM. Features three interconnected domains: technician landing pages, back-office management dashboard, and client booking interface. (Project in progress)',
+    technologies: ['Vue.js', 'TypeScript', 'Nuxt 3', 'Firebase', 'Tailwind CSS'],
+    githubUrl: 'https://github.com/imanolcorimayo/instalapro',
+    liveUrl: 'https://instalapro-back-office.web.app/',
+    featured: true,
+    completedDate: '2024-09'
   },
   {
     id: '4',
