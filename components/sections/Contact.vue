@@ -62,7 +62,7 @@ defineOptions({
 const socialLinks = [
   { name: 'GitHub', handle: '@andrealopezpalomeque', url: 'https://github.com/andrealopezpalomeque' },
   { name: 'LinkedIn', handle: 'Andrea Victoria López Palomeque', url: 'https://www.linkedin.com/in/andrea-victoria-lopez-palomeque/' },
-  { name: 'X', handle: '@pipilopezpalome', url: 'https://x.com' },
+  { name: 'X', handle: '@pipilopezpalome', url: 'https://x.com/pipilopezpalome' },
   { name: 'Portfolio', handle: 'View Live Site', url: '#' }
 ]
 </script>
