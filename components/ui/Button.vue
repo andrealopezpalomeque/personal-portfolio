@@ -9,37 +9,55 @@
     :class="buttonClasses"
     @click="handleClick"
   >
-    <Icon
+    <IconSvgSpinners8DotsRotate
       v-if="loading"
-      name="svg-spinners:8-dots-rotate"
       class="w-4 h-4 mr-2"
     />
-    <Icon
-      v-else-if="icon && iconPosition === 'left'"
-      :name="icon"
+    <component
+      v-else-if="icon"
+      :is="iconComponent"
       class="w-4 h-4 mr-2"
     />
     <slot />
-    <Icon
-      v-if="icon && iconPosition === 'right'"
-      :name="icon"
-      class="w-4 h-4 ml-2"
-    />
   </component>
 </template>
 
 <script setup>
-import { computed } from 'vue'
-import Icon from '~/components/Icon.vue'
+import { computed, resolveComponent } from 'vue'
+import IconSvgSpinners8DotsRotate from '~icons/svg-spinners/8-dots-rotate'
 
 defineOptions({
   name: 'UiButton'
 })
 
-const props = withDefaults(defineProps(), {
-  variant: 'primary',
-  size: 'md',
-  iconPosition: 'left'
+const props = defineProps({
+  variant: {
+    default: 'primary'
+  },
+  size: {
+    default: 'md'
+  },
+  href: {
+    default: ''
+  },
+  to: {
+    default: ''
+  },
+  target: {
+    default: ''
+  },
+  rel: {
+    default: ''
+  },
+  disabled: {
+    default: false
+  },
+  loading: {
+    default: false
+  },
+  icon: {
+    default: ''
+  }
 })
 
 const emit = defineEmits(['click'])
@@ -48,6 +66,13 @@ const tag = computed(() => {
   if (props.href) return 'a'
   if (props.to) return 'NuxtLink'
   return 'button'
+})
+
+const iconComponent = computed(() => {
+  if (!props.icon) return null
+  // Convert icon name to component import
+  // e.g., 'ph:rocket-launch' -> 'IconPhRocketLaunch'
+  return resolveComponent(props.icon.replace(/^~icons\//, '').replace(/[\-:]/g, '-'))
 })
 
 const buttonClasses = computed(() => {
@@ -72,6 +97,7 @@ const buttonClasses = computed(() => {
     variantClasses[props.variant]
   ].join(' ')
 })
+
 
 const handleClick = (event) => {
   if (!props.disabled && !props.loading) {

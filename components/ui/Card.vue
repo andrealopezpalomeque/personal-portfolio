@@ -25,10 +25,20 @@ defineOptions({
   name: 'UiCard'
 })
 
-const props = withDefaults(defineProps(), {
-  variant: 'default',
-  padding: true,
-  hover: true
+const props = defineProps({
+  title: {
+    default: ''
+  },
+  variant: {
+    default: 'default',
+    validator: value => ['default', 'elevated', 'outlined'].includes(value)
+  },
+  padding: {
+    default: true
+  },
+  hover: {
+    default: true
+  }
 })
 
 const cardClasses = computed(() => {

@@ -50,7 +50,7 @@
           </h4>
           <ul class="space-y-2">
             <li class="flex items-center text-gray-600 dark:text-gray-300">
-              <Icon name="ph:envelope" class="w-4 h-4 mr-2" />
+              <IconPhEnvelope class="w-4 h-4 mr-2" />
               <a
                 href="mailto:hello@example.com"
                 class="hover:text-gray-900 dark:hover:text-white transition-colors"
@@ -59,7 +59,7 @@
               </a>
             </li>
             <li class="flex items-center text-gray-600 dark:text-gray-300">
-              <Icon name="ph:map-pin" class="w-4 h-4 mr-2" />
+              <IconPhMapPin class="w-4 h-4 mr-2" />
               <span>Available Worldwide</span>
             </li>
           </ul>
@@ -88,6 +88,9 @@
 </template>
 
 <script setup>
+import IconPhEnvelope from '~icons/ph/envelope'
+import IconPhMapPin from '~icons/ph/map-pin'
+
 const currentYear = new Date().getFullYear()
 
 const socialLinks = [

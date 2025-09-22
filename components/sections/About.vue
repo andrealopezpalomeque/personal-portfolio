@@ -70,8 +70,8 @@
                     class="flex flex-col items-center text-center"
                   >
                     <div class="w-12 h-12 bg-gray-100 dark:bg-gray-700 rounded-lg flex items-center justify-center mb-2">
-                      <Icon
-                        :name="tech.icon"
+                      <component
+                        :is="getIconComponent(tech.icon)"
                         class="w-6 h-6 text-primary-600 dark:text-primary-400"
                       />
                     </div>
@@ -93,7 +93,7 @@
                     :key="fact"
                     class="flex items-center text-sm text-gray-600 dark:text-gray-300"
                   >
-                    <Icon name="ph:check" class="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
+                    <IconPhCheck class="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
                     {{ fact }}
                   </li>
                 </ul>
@@ -107,16 +107,28 @@
 </template>
 
 <script setup>
-import Icon from '~/components/Icon.vue'
+import IconPhCheck from '~icons/ph/check'
+import IconLogosVue from '~icons/logos/vue'
+import IconLogosTypescriptIcon from '~icons/logos/typescript-icon'
+import IconLogosNodejsIcon from '~icons/logos/nodejs-icon'
+import IconLogosPython from '~icons/logos/python'
+import IconLogosPostgresql from '~icons/logos/postgresql'
+import IconLogosDockerIcon from '~icons/logos/docker-icon'
 
 defineOptions({
   name: 'SectionsAbout'
 })
 
-const props = withDefaults(defineProps(), {
-  aboutText: "I'm a full-stack developer with a passion for creating digital experiences that are not only functional but also intuitive and engaging. With several years of experience in web development, I've had the opportunity to work on diverse projects ranging from e-commerce platforms to data visualization tools.",
-  backgroundText: "My journey into programming started with curiosity and has evolved into a career I'm truly passionate about. I believe in writing clean, maintainable code and staying up-to-date with the latest technologies and best practices in the industry.",
-  passionText: "When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community. I'm always excited to take on new challenges and collaborate on innovative projects."
+const props = defineProps({
+  aboutText: {
+    default: "I'm a full-stack developer with a passion for creating digital experiences that are not only functional but also intuitive and engaging. With several years of experience in web development, I've had the opportunity to work on diverse projects ranging from e-commerce platforms to data visualization tools."
+  },
+  backgroundText: {
+    default: "My journey into programming started with curiosity and has evolved into a career I'm truly passionate about. I believe in writing clean, maintainable code and staying up-to-date with the latest technologies and best practices in the industry."
+  },
+  passionText: {
+    default: "When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community. I'm always excited to take on new challenges and collaborate on innovative projects."
+  }
 })
 
 const stats = [
@@ -135,10 +147,23 @@ const topTechnologies = [
   { name: 'Docker', icon: 'logos:docker-icon' }
 ]
 
+
 const funFacts = [
   'Coffee enthusiast ☕',
   'Love solving puzzles 🧩',
   'Always learning something new 📚',
   'Enjoy teaching others 👨‍🏫'
 ]
+
+const getIconComponent = (iconName) => {
+  const iconMap = {
+    'logos:vue': IconLogosVue,
+    'logos:typescript-icon': IconLogosTypescriptIcon,
+    'logos:nodejs-icon': IconLogosNodejsIcon,
+    'logos:python': IconLogosPython,
+    'logos:postgresql': IconLogosPostgresql,
+    'logos:docker-icon': IconLogosDockerIcon
+  }
+  return iconMap[iconName] || 'div'
+}
 </script>

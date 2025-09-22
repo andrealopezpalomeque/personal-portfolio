@@ -26,8 +26,8 @@
               class="flex items-center group"
             >
               <div class="w-12 h-12 bg-primary-100 dark:bg-primary-900/20 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary-200 dark:group-hover:bg-primary-900/40 transition-colors">
-                <Icon
-                  :name="contact.icon"
+                <component
+                  :is="getContactIconComponent(contact.icon)"
                   class="w-6 h-6 text-primary-600 dark:text-primary-400"
                 />
               </div>
@@ -199,8 +199,7 @@
               class="mt-6 p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg"
             >
               <div class="flex items-center">
-                <Icon
-                  name="ph:check-circle"
+                <IconPhCheckCircle
                   class="w-5 h-5 text-green-600 dark:text-green-400 mr-2"
                 />
                 <span class="text-green-800 dark:text-green-200">
@@ -233,7 +232,7 @@
             <UiButton
               variant="outline"
               size="lg"
-              href="mailto:hello@example.com"
+              href="mailto:andrealopezpalomeque@gmail.com"
               icon="ph:envelope"
             >
               Email Me Directly
@@ -247,7 +246,14 @@
 
 <script setup>
 import { ref, reactive } from 'vue'
-import Icon from '~/components/Icon.vue'
+import IconPhEnvelope from '~icons/ph/envelope'
+import IconPhPhone from '~icons/ph/phone'
+import IconPhMapPin from '~icons/ph/map-pin'
+import IconPhGithubLogo from '~icons/ph/github-logo'
+import IconPhLinkedinLogo from '~icons/ph/linkedin-logo'
+import IconPhTwitterLogo from '~icons/ph/twitter-logo'
+import IconPhInstagramLogo from '~icons/ph/instagram-logo'
+import IconPhCheckCircle from '~icons/ph/check-circle'
 
 const form = reactive({
   name: '',
@@ -260,12 +266,13 @@ const form = reactive({
 const isSubmitting = ref(false)
 const showSuccess = ref(false)
 
+
 const contactMethods = [
   {
     type: 'email',
     label: 'Email',
-    value: 'hello@example.com',
-    href: 'mailto:hello@example.com',
+    value: 'andrealopezpalomeque@gmail.com',
+    href: 'mailto:andrealopezpalomeque@gmail.com',
     icon: 'ph:envelope',
     external: false
   },
@@ -288,11 +295,24 @@ const contactMethods = [
 ]
 
 const socialLinks = [
-  { name: 'GitHub', href: 'https://github.com', icon: 'ph:github-logo' },
-  { name: 'LinkedIn', href: 'https://linkedin.com', icon: 'ph:linkedin-logo' },
+  { name: 'GitHub', href: 'https://github.com/andrealopezpalomeque', icon: 'ph:github-logo' },
+  { name: 'LinkedIn', href: 'https://www.linkedin.com/in/andrea-victoria-lopez-palomeque/', icon: 'ph:linkedin-logo' },
   { name: 'Twitter', href: 'https://twitter.com', icon: 'ph:twitter-logo' },
   { name: 'Instagram', href: 'https://instagram.com', icon: 'ph:instagram-logo' }
 ]
+
+const getContactIconComponent = (iconName) => {
+  const iconMap = {
+    'ph:envelope': IconPhEnvelope,
+    'ph:phone': IconPhPhone,
+    'ph:map-pin': IconPhMapPin,
+    'ph:github-logo': IconPhGithubLogo,
+    'ph:linkedin-logo': IconPhLinkedinLogo,
+    'ph:twitter-logo': IconPhTwitterLogo,
+    'ph:instagram-logo': IconPhInstagramLogo
+  }
+  return iconMap[iconName] || 'div'
+}
 
 const submitForm = async () => {
   isSubmitting.value = true

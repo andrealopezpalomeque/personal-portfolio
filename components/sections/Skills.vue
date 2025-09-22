@@ -22,8 +22,8 @@
           <template #header>
             <div class="flex items-center mb-6">
               <div class="w-12 h-12 bg-primary-100 dark:bg-primary-900/20 rounded-lg flex items-center justify-center mr-4">
-                <Icon
-                  :name="category.icon"
+                <component
+                  :is="getCategoryIconComponent(category.icon)"
                   class="w-6 h-6 text-primary-600 dark:text-primary-400"
                 />
               </div>
@@ -45,9 +45,9 @@
               class="flex items-center justify-between"
             >
               <div class="flex items-center">
-                <Icon
+                <component
                   v-if="skill.icon"
-                  :name="skill.icon"
+                  :is="getSkillIconComponent(skill.icon)"
                   class="w-4 h-4 mr-2"
                 />
                 <span class="text-gray-700 dark:text-gray-300 text-sm">
@@ -105,8 +105,8 @@
               :key="tool.name"
               class="flex flex-col items-center text-center p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
             >
-              <Icon
-                :name="tool.icon"
+              <component
+                :is="getToolIconComponent(tool.icon)"
                 class="w-8 h-8 mb-2 text-gray-600 dark:text-gray-300"
               />
               <span class="text-xs text-gray-600 dark:text-gray-300">
@@ -125,8 +125,8 @@
               class="flex items-center justify-between p-3 rounded-lg bg-gray-50 dark:bg-gray-700"
             >
               <div class="flex items-center">
-                <Icon
-                  :name="learning.icon"
+                <component
+                  :is="getLearningIconComponent(learning.icon)"
                   class="w-5 h-5 mr-3 text-primary-600 dark:text-primary-400"
                 />
                 <div>
@@ -150,8 +150,31 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
-import Icon from '~/components/Icon.vue'
+import IconPhMonitor from '~icons/ph/monitor'
+import IconPhCpu from '~icons/ph/cpu'
+import IconPhDatabase from '~icons/ph/database'
+
+// Logos icons for skills
+import IconLogosVue from '~icons/logos/vue'
+import IconLogosReact from '~icons/logos/react'
+import IconLogosTypescriptIcon from '~icons/logos/typescript-icon'
+import IconLogosTailwindcssIcon from '~icons/logos/tailwindcss-icon'
+import IconLogosNodejsIcon from '~icons/logos/nodejs-icon'
+import IconLogosPython from '~icons/logos/python'
+import IconLogosGraphql from '~icons/logos/graphql'
+import IconLogosPostgresql from '~icons/logos/postgresql'
+import IconLogosMongodbIcon from '~icons/logos/mongodb-icon'
+import IconLogosDockerIcon from '~icons/logos/docker-icon'
+import IconLogosGitIcon from '~icons/logos/git-icon'
+import IconLogosVisualStudioCode from '~icons/logos/visual-studio-code'
+import IconLogosFigma from '~icons/logos/figma'
+import IconLogosPostmanIcon from '~icons/logos/postman-icon'
+import IconLogosGithubIcon from '~icons/logos/github-icon'
+import IconLogosVercelIcon from '~icons/logos/vercel-icon'
+import IconLogosNetlifyIcon from '~icons/logos/netlify-icon'
+import IconLogosRust from '~icons/logos/rust'
+import IconLogosAws from '~icons/logos/aws'
+import IconLogosThreejs from '~icons/logos/threejs'
 
 defineOptions({
   name: 'SectionsSkills'
@@ -173,7 +196,7 @@ const skillCategories = [
   {
     name: 'Backend Development',
     description: 'Scalable server-side solutions',
-    icon: 'ph:server',
+    icon: 'ph:computer',
     skills: [
       { name: 'Node.js', level: 'advanced', icon: 'logos:nodejs-icon' },
       { name: 'Python', level: 'intermediate', icon: 'logos:python' },
@@ -228,5 +251,52 @@ const getLevelVariant = (level) => {
     expert: 'primary'
   }
   return variants[level] || 'secondary'
+}
+
+const getCategoryIconComponent = (iconName) => {
+  const iconMap = {
+    'ph:monitor': IconPhMonitor,
+    'ph:computer': IconPhCpu, // fallback to cpu icon
+    'ph:database': IconPhDatabase
+  }
+  return iconMap[iconName] || 'div'
+}
+
+const getSkillIconComponent = (iconName) => {
+  const iconMap = {
+    'logos:vue': IconLogosVue,
+    'logos:react': IconLogosReact,
+    'logos:typescript-icon': IconLogosTypescriptIcon,
+    'logos:tailwindcss-icon': IconLogosTailwindcssIcon,
+    'logos:nodejs-icon': IconLogosNodejsIcon,
+    'logos:python': IconLogosPython,
+    'logos:graphql': IconLogosGraphql,
+    'logos:postgresql': IconLogosPostgresql,
+    'logos:mongodb-icon': IconLogosMongodbIcon,
+    'logos:docker-icon': IconLogosDockerIcon,
+    'logos:git-icon': IconLogosGitIcon
+  }
+  return iconMap[iconName] || 'div'
+}
+
+const getToolIconComponent = (iconName) => {
+  const iconMap = {
+    'logos:visual-studio-code': IconLogosVisualStudioCode,
+    'logos:figma': IconLogosFigma,
+    'logos:postman-icon': IconLogosPostmanIcon,
+    'logos:github-icon': IconLogosGithubIcon,
+    'logos:vercel-icon': IconLogosVercelIcon,
+    'logos:netlify-icon': IconLogosNetlifyIcon
+  }
+  return iconMap[iconName] || 'div'
+}
+
+const getLearningIconComponent = (iconName) => {
+  const iconMap = {
+    'logos:rust': IconLogosRust,
+    'logos:aws': IconLogosAws,
+    'logos:threejs': IconLogosThreejs
+  }
+  return iconMap[iconName] || 'div'
 }
 </script>

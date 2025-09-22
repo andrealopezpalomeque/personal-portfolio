@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@iconify/vue": "^5.0.0",
     "@nuxtjs/tailwindcss": "^6.12.3",
     "@vueuse/nuxt": "13.2.0",
     "nuxt": "^4.0.1",

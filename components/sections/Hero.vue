@@ -63,8 +63,7 @@
           <div class="animate-bounce-slow">
             <div class="relative">
               <div class="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full flex items-center justify-center shadow-2xl">
-                <Icon
-                  name="ph:user"
+                <IconUser
                   class="w-32 h-32 md:w-40 md:h-40 text-white"
                 />
               </div>
@@ -92,18 +91,23 @@
 </template>
 
 <script setup>
-import Icon from '~/components/Icon.vue'
 
-const props = withDefaults(defineProps(), {
-  name: 'Andrea Victoria',
-  title: 'Full Stack Developer & UI/UX Enthusiast',
-  description: 'I create beautiful, functional, and user-centered digital experiences that solve real-world problems. Passionate about clean code, modern design, and turning ideas into reality.'
+const props = defineProps({
+  name: {
+    default: 'Andrea Victoria'
+  },
+  title: {
+    default: 'Full Stack Developer & UI/UX Enthusiast'
+  },
+  description: {
+    default: 'I create beautiful, functional, and user-centered digital experiences that solve real-world problems. Passionate about clean code, modern design, and turning ideas into reality.'
+  }
 })
 
 const socialLinks = [
-  { name: 'GitHub', href: 'https://github.com', icon: 'ph:github-logo' },
-  { name: 'LinkedIn', href: 'https://linkedin.com', icon: 'ph:linkedin-logo' },
+  { name: 'GitHub', href: 'https://github.com/andrealopezpalomeque', icon: 'ph:github-logo' },
+  { name: 'LinkedIn', href: 'https://www.linkedin.com/in/andrea-victoria-lopez-palomeque/', icon: 'ph:linkedin-logo' },
   { name: 'Twitter', href: 'https://twitter.com', icon: 'ph:twitter-logo' },
-  { name: 'Email', href: 'mailto:hello@example.com', icon: 'ph:envelope' }
+  { name: 'Email', href: 'mailto:andrealopezpalomeque@gmail.com', icon: 'ph:envelope' }
 ]
 </script>

@@ -1,28 +1,28 @@
 <template>
   <span :class="badgeClasses">
-    <Icon
-      v-if="icon"
-      :name="icon"
-      class="w-3 h-3"
-      :class="{ 'mr-1': $slots.default }"
-    />
     <slot />
   </span>
 </template>
 
 <script setup>
 import { computed } from 'vue'
-import Icon from '~/components/Icon.vue'
 
 defineOptions({
   name: 'UiBadge'
 })
 
-const props = withDefaults(defineProps(), {
-  variant: 'secondary',
-  size: 'md',
-  outlined: false
+const props = defineProps({
+  variant: {
+    default: 'secondary'
+  },
+  size: {
+    default: 'md'
+  },
+  outlined: {
+    default: false
+  }
 })
+
 
 const badgeClasses = computed(() => {
   const baseClasses = 'inline-flex items-center font-medium rounded-full transition-colors duration-200'
