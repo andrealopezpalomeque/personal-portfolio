@@ -48,15 +48,15 @@
             </div>
 
             <a
-              href="/resume/Andrea_Lopez_Palomeque_Resume.docx"
-              download="Andrea_Lopez_Palomeque_Resume.docx"
+              href="/resume/Andrea_Lopez_Palomeque_Resume.pdf"
+              download="Andrea_Lopez_Palomeque_Resume.pdf"
               class="group p-4 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300 hover:shadow-sm min-w-0 block w-full"
             >
               <div class="space-y-2 min-w-0">
                 <div class="text-foreground group-hover:text-muted-foreground transition-colors duration-300">
                   Download Resume
                 </div>
-                <div class="text-sm text-muted-foreground break-words overflow-hidden">Andrea_Lopez_Palomeque_Resume.docx</div>
+                <div class="text-sm text-muted-foreground break-words overflow-hidden">Andrea_Lopez_Palomeque_Resume.pdf</div>
               </div>
             </a>
           </div>
