@@ -10,7 +10,7 @@
           :class="[
             'w-2 h-12 rounded-full transition-all duration-500 border border-transparent cursor-pointer',
             activeSection === section
-              ? 'bg-white dark:bg-white'
+              ? 'bg-gray-900 dark:bg-white'
               : 'bg-gray-500/40 dark:bg-gray-400/40 hover:bg-gray-500/60 dark:hover:bg-gray-400/60'
           ]"
           :aria-label="`Navigate to ${section}`"
