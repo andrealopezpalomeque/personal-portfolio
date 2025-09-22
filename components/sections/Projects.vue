@@ -83,6 +83,10 @@
           rel="noopener noreferrer"
           class="group inline-flex items-center gap-3 text-foreground hover:text-muted-foreground transition-colors duration-300"
         >
+          <Icon
+            icon="ph:github-logo"
+            class="w-5 h-5"
+          />
           <span class="text-base sm:text-lg">See more on GitHub</span>
           <Icon
             icon="ph:arrow-right"
