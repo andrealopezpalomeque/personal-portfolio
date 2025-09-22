@@ -54,7 +54,7 @@ const experience = [
     role: "Frontend Developer",
     company: "Meowtel",
     description: "Migrated key components from Nuxt 3 to PHP/Alpine.js stack. Integrated analytics tools and optimized Core Web Vitals for improved performance.",
-    tech: ["Vue.js", "Alpine.js", "Tailwind CSS", "PHP", "PostHog"]
+    tech: ["Vue.js", "Alpine.js", "Tailwind CSS", "PostHog Analytics", "Google Analytics", "Figma", "A/B Testing", "Responsive Design", "Sentry (Error Monitoring)", "Conversion Rate Optimization (CRO)", "UI/UX Collaboration"],
   },
   {
     year: "2024",
