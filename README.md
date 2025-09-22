@@ -62,7 +62,7 @@ Update your personal information in the components:
 
 - **Hero Section**: `components/sections/Hero.vue`
 - **About Section**: `components/sections/About.vue`
-- **Contact Information**: `components/sections/Contact.vue` and `components/TheFooter.vue`
+- **Contact Information**: `components/sections/Contact.vue`
 
 ### Projects
 
@@ -86,9 +86,7 @@ Update SEO meta tags in `pages/index.vue` and `nuxt.config.ts`.
 /
 ├── components/
 │   ├── sections/          # Page sections (Hero, About, Skills, etc.)
-│   ├── ui/               # Reusable UI components
-│   ├── TheHeader.vue     # Site header with navigation
-│   └── TheFooter.vue     # Site footer
+│   └── ui/               # Reusable UI components
 ├── composables/          # Vue composables
 ├── layouts/              # Nuxt layouts
 ├── pages/               # Nuxt pages
