@@ -13,6 +13,7 @@ export default defineNuxtConfig({
   // Modules
   modules: [
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/google-fonts',
     '@vueuse/nuxt',
     'unplugin-icons/nuxt',
     'dayjs-nuxt'
@@ -21,6 +22,18 @@ export default defineNuxtConfig({
   // Unplugin Icons configuration
   unpluginIcons: {
     autoInstall: true,
+  },
+
+  // Google Fonts configuration
+  googleFonts: {
+    families: {
+      Geist: [300, 400, 500, 600],
+      'Geist+Mono': [400]
+    },
+    display: 'swap',
+    preconnect: true,
+    prefetch: true,
+    preload: true
   },
 
   // Icons and components configuration
@@ -70,11 +83,18 @@ export default defineNuxtConfig({
   // App configuration
   app: {
     head: {
-      title: 'Personal Portfolio',
+      title: 'Andrea Victoria López Palomeque - Frontend Developer',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'Personal portfolio showcasing software development skills and projects' }
+        { name: 'description', content: 'Frontend Developer from Buenos Aires specializing in Vue.js, React, and modern web technologies. Available for freelance and full-time opportunities.' },
+        { name: 'author', content: 'Andrea Victoria López Palomeque' },
+        { property: 'og:title', content: 'Andrea Victoria López Palomeque - Frontend Developer' },
+        { property: 'og:description', content: 'Frontend Developer from Buenos Aires specializing in Vue.js, React, and modern web technologies.' },
+        { property: 'og:type', content: 'website' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: 'Andrea Victoria López Palomeque - Frontend Developer' },
+        { name: 'twitter:description', content: 'Frontend Developer from Buenos Aires specializing in Vue.js, React, and modern web technologies.' }
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
