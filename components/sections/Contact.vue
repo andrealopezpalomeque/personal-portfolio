@@ -28,20 +28,35 @@
         <div class="space-y-6 sm:space-y-8">
           <div class="text-sm text-muted-foreground font-mono">ELSEWHERE</div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <a
+                v-for="social in socialLinks"
+                :key="social.name"
+                :href="social.url"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="group p-4 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300 hover:shadow-sm min-w-0"
+              >
+                <div class="space-y-2 min-w-0">
+                  <div class="text-foreground group-hover:text-muted-foreground transition-colors duration-300">
+                    {{ social.name }}
+                  </div>
+                  <div class="text-sm text-muted-foreground break-words overflow-hidden">{{ social.handle }}</div>
+                </div>
+              </a>
+            </div>
+
             <a
-              v-for="social in socialLinks"
-              :key="social.name"
-              :href="social.url"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="group p-4 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300 hover:shadow-sm min-w-0"
+              href="/resume/Andrea_Lopez_Palomeque_Resume.docx"
+              download="Andrea_Lopez_Palomeque_Resume.docx"
+              class="group p-4 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300 hover:shadow-sm min-w-0 block w-full"
             >
               <div class="space-y-2 min-w-0">
                 <div class="text-foreground group-hover:text-muted-foreground transition-colors duration-300">
-                  {{ social.name }}
+                  Download Resume
                 </div>
-                <div class="text-sm text-muted-foreground break-words overflow-hidden">{{ social.handle }}</div>
+                <div class="text-sm text-muted-foreground break-words overflow-hidden">Andrea_Lopez_Palomeque_Resume.docx</div>
               </div>
             </a>
           </div>
@@ -61,8 +76,6 @@ defineOptions({
 
 const socialLinks = [
   { name: 'GitHub', handle: '@andrealopezpalomeque', url: 'https://github.com/andrealopezpalomeque' },
-  { name: 'LinkedIn', handle: 'Andrea Victoria López Palomeque', url: 'https://www.linkedin.com/in/andrea-victoria-lopez-palomeque/' },
-  { name: 'X', handle: '@pipilopezpalome', url: 'https://x.com/pipilopezpalome' },
-  { name: 'Portfolio', handle: 'View Live Site', url: '#' }
+  { name: 'LinkedIn', handle: 'Andrea Victoria López Palomeque', url: 'https://www.linkedin.com/in/andrea-victoria-lopez-palomeque/' }
 ]
 </script>
