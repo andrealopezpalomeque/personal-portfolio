@@ -67,7 +67,7 @@ import { ref, onMounted, onUnmounted } from 'vue'
 import { Icon } from '@iconify/vue'
 
 // Theme management
-const isDark = ref(false)
+const { isDark, toggleTheme, initTheme } = useTheme()
 
 // Navigation
 const activeSection = ref('intro')
@@ -95,13 +95,6 @@ useSeoMeta({
   colorScheme: 'light dark'
 })
 
-// Theme toggle
-const toggleTheme = () => {
-  isDark.value = !isDark.value
-  document.documentElement.classList.toggle('dark', isDark.value)
-  localStorage.setItem('theme', isDark.value ? 'dark' : 'light')
-}
-
 // Scroll to section
 const scrollToSection = (section) => {
   const element = document.getElementById(section)
@@ -117,18 +110,9 @@ const scrollToSection = (section) => {
 // Intersection observer for navigation
 let observer = null
 
-// Initialize theme on mount
-const initializeTheme = () => {
-  const savedTheme = localStorage.getItem('theme')
-  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-
-  isDark.value = savedTheme ? savedTheme === 'dark' : systemPrefersDark
-  document.documentElement.classList.toggle('dark', isDark.value)
-}
-
 onMounted(() => {
   // Initialize theme
-  initializeTheme()
+  initTheme()
 
   // Initialize intersection observer
   observer = new IntersectionObserver(

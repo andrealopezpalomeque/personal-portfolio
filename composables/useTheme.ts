@@ -2,7 +2,7 @@ import { readonly } from 'vue'
 
 export const useTheme = () => {
   const isDark = useCookie('theme-dark', {
-    default: () => false
+    default: () => true // Default to dark theme
   })
 
   const toggleTheme = () => {
@@ -22,10 +22,7 @@ export const useTheme = () => {
 
   const initTheme = () => {
     if (typeof window !== 'undefined') {
-      // Check for system preference if no saved preference
-      if (!useCookie('theme-dark').value) {
-        isDark.value = window.matchMedia('(prefers-color-scheme: dark)').matches
-      }
+      // Only apply the saved theme preference, don't override it
       applyTheme()
     }
   }
