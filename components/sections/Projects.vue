@@ -17,7 +17,7 @@
         <article
           v-for="project in filteredProjects"
           :key="project.id"
-          class="group p-6 sm:p-8 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-500 hover:shadow-lg cursor-pointer"
+          class="group p-6 sm:p-8 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-500 hover:shadow-lg"
         >
           <div class="space-y-4">
             <div class="flex items-center justify-between text-xs text-muted-foreground font-mono">
@@ -48,12 +48,28 @@
               </span>
             </div>
 
-            <div class="flex items-center gap-2 text-sm text-muted-foreground group-hover:text-foreground transition-colors duration-300">
-              <span>View project</span>
-              <Icon
-                icon="ph:arrow-right"
-                class="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300"
-              />
+            <!-- Project Links -->
+            <div class="flex items-center gap-4 pt-2">
+              <a
+                :href="project.githubUrl"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors duration-300"
+              >
+                <Icon icon="ph:github-logo" class="w-4 h-4" />
+                <span>View Code</span>
+              </a>
+              
+              <a
+                v-if="project.liveUrl"
+                :href="project.liveUrl"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors duration-300"
+              >
+                <Icon icon="ph:arrow-square-out" class="w-4 h-4" />
+                <span>Live Demo</span>
+              </a>
             </div>
           </div>
         </article>
@@ -77,19 +93,20 @@ defineOptions({
 const realProjects = [
   {
     id: '1',
-    title: 'GO API',
-    description: 'Golang API REST made with Gorm, Fiber and SQLite. A robust backend solution demonstrating modern Go development practices.',
-    technologies: ['Golang', 'Gorm', 'Fiber', 'SQLite'],
-    githubUrl: 'https://github.com/andrealopezpalomeque',
+    title: 'Cruzar Deportes - Sports Jersey E-commerce',
+    description: 'Specialized e-commerce platform for sports jerseys and apparel from teams worldwide. Features comprehensive product catalog, shopping cart system, advanced search & filtering, and admin management tools.',
+    technologies: ['Nuxt 4', 'Vue 3', 'TypeScript', 'Tailwind CSS', 'Pinia', 'Cloudinary', 'Firebase'],
+    githubUrl: 'https://github.com/andrealopezpalomeque/cruzar-deportes/',
+    liveUrl: 'https://deportes-cruzar.web.app/',
     featured: true,
-    completedDate: '2024-01'
+    completedDate: '2024-03'
   },
   {
     id: '2',
     title: 'Swift Quiz App',
     description: 'iOS app using MVC architecture that allows users to participate in a quiz answering true/false questions with elegant UI.',
     technologies: ['Swift', 'iOS', 'MVC', 'UIKit'],
-    githubUrl: 'https://github.com/andrealopezpalomeque',
+    githubUrl: 'https://github.com/andrealopezpalomeque/swift-quiz-app',
     featured: true,
     completedDate: '2023-11'
   },
@@ -98,7 +115,7 @@ const realProjects = [
     title: 'BMI Calculator',
     description: 'Mobile app developed in Swift using MVC architecture to calculate BMI with clean interface and health insights.',
     technologies: ['Swift', 'iOS', 'MVC', 'HealthKit'],
-    githubUrl: 'https://github.com/andrealopezpalomeque',
+    githubUrl: 'https://github.com/andrealopezpalomeque/bmi-calculator',
     featured: false,
     completedDate: '2023-10'
   },
@@ -107,7 +124,7 @@ const realProjects = [
     title: 'Food App',
     description: 'Full Stack project for Henry\'s bootcamp using React, Redux, Node.js, Express.js and PostgreSQL with modern architecture.',
     technologies: ['React', 'Redux', 'Node.js', 'Express.js', 'PostgreSQL'],
-    githubUrl: 'https://github.com/andrealopezpalomeque',
+    githubUrl: 'https://github.com/andrealopezpalomeque/food-app',
     featured: true,
     completedDate: '2022-12'
   }
