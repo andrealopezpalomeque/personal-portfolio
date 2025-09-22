@@ -99,7 +99,7 @@ const realProjects = [
     githubUrl: 'https://github.com/andrealopezpalomeque/cruzar-deportes/',
     liveUrl: 'https://deportes-cruzar.web.app/',
     featured: true,
-    completedDate: '2024-03'
+    completedDate: '2025-09'
   },
   {
     id: '2',
@@ -109,7 +109,7 @@ const realProjects = [
     githubUrl: 'https://github.com/andrealopezpalomeque/carnavales-correntinos-2026',
     liveUrl: 'https://carnavales-correntinos-2026.web.app/',
     featured: true,
-    completedDate: '2024-01'
+    completedDate: '2025-07'
   },
   {
     id: '3',
@@ -119,14 +119,23 @@ const realProjects = [
     githubUrl: 'https://github.com/imanolcorimayo/instalapro',
     liveUrl: 'https://instalapro-back-office.web.app/',
     featured: true,
-    completedDate: '2024-09'
+    completedDate: '2025-07'
   },
   {
     id: '4',
+    title: 'RAG Playground',
+    description: 'Comprehensive Retrieval-Augmented Generation (RAG) system featuring multiple retrieval strategies and intelligent agent-based approach. Includes traditional semantic search, HyDE method, multi-step retrieval, and AI agent for optimal strategy selection.',
+    technologies: ['Python', 'ChromaDB', 'SentenceTransformers', 'Ollama', 'LLM Integration'],
+    githubUrl: 'https://github.com/andrealopezpalomeque/rag-playground',
+    featured: true,
+    completedDate: '2024-08'
+  },
+  {
+    id: '5',
     title: 'Food App',
     description: 'Full Stack project for Henry\'s bootcamp using React, Redux, Node.js, Express.js and PostgreSQL with modern architecture.',
     technologies: ['React', 'Redux', 'Node.js', 'Express.js', 'PostgreSQL'],
-    githubUrl: 'https://github.com/andrealopezpalomeque/food-app',
+    githubUrl: 'https://github.com/andrealopezpalomeque/PI-Food-App-ok',
     featured: true,
     completedDate: '2022-12'
   }
