@@ -75,6 +75,21 @@
         </article>
       </div>
 
+      <!-- See More Button -->
+      <div class="text-center mt-12 sm:mt-16">
+        <a
+          href="https://github.com/andrealopezpalomeque"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group inline-flex items-center gap-3 text-foreground hover:text-muted-foreground transition-colors duration-300"
+        >
+          <span class="text-base sm:text-lg">See more on GitHub</span>
+          <Icon
+            icon="ph:arrow-right"
+            class="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300"
+          />
+        </a>
+      </div>
 
     </div>
   </section>
