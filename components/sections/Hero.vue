@@ -14,10 +14,8 @@
 
           <div class="space-y-6 max-w-md">
             <p class="text-lg sm:text-xl text-muted-foreground leading-relaxed">
-              Frontend Developer crafting digital experiences at the intersection of
-              <span class="text-foreground"> design</span>,<span class="text-foreground"> technology</span>,
-              and
-              <span class="text-foreground"> user experience</span>.
+              Frontend Developer crafting interfaces that not only <span class="text-foreground">look good</span> but also <span class="text-foreground">work smarter</span> — that's my thing.
+              I blend <span class="text-foreground">modern web technologies</span> with a curiosity for <span class="text-foreground">AI-driven solutions</span>. I'm passionate about shaping tools that help people and products <span class="text-foreground">grow</span>.
             </p>
 
             <div class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 text-sm text-muted-foreground">
