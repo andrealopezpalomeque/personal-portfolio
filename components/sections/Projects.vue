@@ -103,12 +103,13 @@ const realProjects = [
   },
   {
     id: '2',
-    title: 'Swift Quiz App',
-    description: 'iOS app using MVC architecture that allows users to participate in a quiz answering true/false questions with elegant UI.',
-    technologies: ['Swift', 'iOS', 'MVC', 'UIKit'],
-    githubUrl: 'https://github.com/andrealopezpalomeque/swift-quiz-app',
+    title: 'Carnavales Correntinos 2026',
+    description: 'Interactive social platform dedicated to Argentina\'s most important festival - Carnavales Correntinos 2026. Features live countdown, social networking, user profiles, exclusive galleries, and admin management system.',
+    technologies: ['Nuxt 3', 'Vue.js', 'Firebase', 'Firestore', 'Tailwind CSS', 'Pinia'],
+    githubUrl: 'https://github.com/andrealopezpalomeque/carnavales-correntinos-2026',
+    liveUrl: 'https://carnavales-correntinos-2026.web.app/',
     featured: true,
-    completedDate: '2023-11'
+    completedDate: '2024-01'
   },
   {
     id: '3',
