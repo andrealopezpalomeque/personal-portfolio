@@ -97,7 +97,7 @@ export default defineNuxtConfig({
         { name: 'twitter:description', content: 'Frontend Developer from Buenos Aires specializing in Vue.js, React, and modern web technologies.' }
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+        { rel: 'icon', type: 'image/jpeg', href: '/favicon-dark.jpg' }
       ]
     }
   }
