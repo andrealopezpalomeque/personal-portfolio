@@ -4,9 +4,11 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   // Enable SSG for static site generation
+  ssr: true,
   nitro: {
     prerender: {
-      routes: ['/']
+      routes: ['/'],
+      crawlLinks: true
     }
   },
 
