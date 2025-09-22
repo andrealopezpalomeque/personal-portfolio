@@ -147,7 +147,7 @@ const realProjects = [
     technologies: ['Python', 'ChromaDB', 'SentenceTransformers', 'Ollama', 'LLM Integration'],
     githubUrl: 'https://github.com/andrealopezpalomeque/rag-playground',
     featured: true,
-    completedDate: '2024-08'
+    completedDate: '2025-08'
   },
   {
     id: '5',
