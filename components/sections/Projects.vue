@@ -4,7 +4,7 @@
       <!-- Section Header -->
       <div class="text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-light text-foreground mb-4">
-          Recent Thoughts
+          Recent Projects
         </h2>
         <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
           A selection of projects that showcase my skills and passion for creating innovative solutions
