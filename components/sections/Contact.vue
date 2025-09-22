@@ -35,13 +35,13 @@
               :href="social.url"
               target="_blank"
               rel="noopener noreferrer"
-              class="group p-4 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300 hover:shadow-sm"
+              class="group p-4 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300 hover:shadow-sm min-w-0"
             >
-              <div class="space-y-2">
+              <div class="space-y-2 min-w-0">
                 <div class="text-foreground group-hover:text-muted-foreground transition-colors duration-300">
                   {{ social.name }}
                 </div>
-                <div class="text-sm text-muted-foreground">{{ social.handle }}</div>
+                <div class="text-sm text-muted-foreground break-words overflow-hidden">{{ social.handle }}</div>
               </div>
             </a>
           </div>
@@ -62,7 +62,7 @@ defineOptions({
 const socialLinks = [
   { name: 'GitHub', handle: '@andrealopezpalomeque', url: 'https://github.com/andrealopezpalomeque' },
   { name: 'LinkedIn', handle: 'Andrea Victoria López Palomeque', url: 'https://www.linkedin.com/in/andrea-victoria-lopez-palomeque/' },
-  { name: 'Twitter', handle: '@andrealopez', url: 'https://twitter.com' },
+  { name: 'X', handle: '@pipilopezpalome', url: 'https://x.com' },
   { name: 'Portfolio', handle: 'View Live Site', url: '#' }
 ]
 </script>
