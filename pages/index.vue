@@ -32,7 +32,7 @@
       <SectionsContact ref="contactRef" />
 
       <!-- Footer -->
-      <footer class="section-padding border-t border-border">
+      <footer class="!pt-[5rem] !pb-[5rem] border-t border-border">
         <div class="container-responsive">
           <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 sm:gap-8">
             <div class="space-y-2">

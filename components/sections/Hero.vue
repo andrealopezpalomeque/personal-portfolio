@@ -63,5 +63,5 @@ defineOptions({
   name: 'SectionsHero'
 })
 
-const focusSkills = ['Vue.js', 'React', 'TypeScript', 'Nuxt.js', 'Tailwind CSS']
+const focusSkills = ['Vue.js', 'Alpine.js', 'TypeScript', 'Nuxt.js', 'Tailwind CSS']
 </script>

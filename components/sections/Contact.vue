@@ -1,5 +1,5 @@
 <template>
-  <section id="contact" class="py-20 sm:py-32 pb-32 sm:pb-40 opacity-0 animate-fade-in-up">
+  <section id="contact" class="py-20 sm:py-32 pb-40 sm:pb-52 opacity-0 animate-fade-in-up">
     <div class="container-responsive">
       <div class="grid lg:grid-cols-2 gap-12 sm:gap-16">
         <div class="space-y-6 sm:space-y-8">
