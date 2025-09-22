@@ -63,7 +63,8 @@
           <div class="animate-bounce-slow">
             <div class="relative">
               <div class="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full flex items-center justify-center shadow-2xl">
-                <IconUser
+                <Icon
+                  icon="ph:user"
                   class="w-32 h-32 md:w-40 md:h-40 text-white"
                 />
               </div>
@@ -91,6 +92,7 @@
 </template>
 
 <script setup>
+import { Icon } from '@iconify/vue'
 
 const props = defineProps({
   name: {

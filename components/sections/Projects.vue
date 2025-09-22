@@ -41,7 +41,8 @@
             <div class="relative h-48 bg-gradient-to-br from-primary-400 to-primary-600 overflow-hidden">
               <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"></div>
               <div class="absolute inset-0 flex items-center justify-center">
-                <IconCode
+                <Icon
+                  icon="ph:code"
                   class="w-16 h-16 text-white opacity-60"
                 />
               </div>
@@ -186,6 +187,7 @@
 
 <script setup>
 import { ref, computed } from 'vue'
+import { Icon } from '@iconify/vue'
 
 defineOptions({
   name: 'SectionsProjects'

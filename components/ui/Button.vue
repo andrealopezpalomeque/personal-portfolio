@@ -13,9 +13,9 @@
       v-if="loading"
       class="w-4 h-4 mr-2"
     />
-    <component
+    <Icon
       v-else-if="icon"
-      :is="iconComponent"
+      :icon="icon"
       class="w-4 h-4 mr-2"
     />
     <slot />
@@ -23,7 +23,8 @@
 </template>
 
 <script setup>
-import { computed, resolveComponent } from 'vue'
+import { computed } from 'vue'
+import { Icon } from '@iconify/vue'
 import IconSvgSpinners8DotsRotate from '~icons/svg-spinners/8-dots-rotate'
 
 defineOptions({
@@ -66,13 +67,6 @@ const tag = computed(() => {
   if (props.href) return 'a'
   if (props.to) return 'NuxtLink'
   return 'button'
-})
-
-const iconComponent = computed(() => {
-  if (!props.icon) return null
-  // Convert icon name to component import
-  // e.g., 'ph:rocket-launch' -> 'IconPhRocketLaunch'
-  return resolveComponent(props.icon.replace(/^~icons\//, '').replace(/[\-:]/g, '-'))
 })
 
 const buttonClasses = computed(() => {
