@@ -133,7 +133,7 @@ const realProjects = [
   {
     id: '3',
     title: 'InstalarPro - AC Technician Platform',
-    description: 'Comprehensive platform connecting air conditioner technicians with clients in Argentina/LATAM. Features three interconnected domains: technician landing pages, back-office management dashboard, and client booking interface. (Project in progress)',
+    description: 'All-in-one platform connecting air conditioner technicians with clients in Argentina/LATAM. Features three interconnected domains: technician landing pages, back-office management dashboard, and client booking interface. (Project in progress)',
     technologies: ['Vue.js', 'TypeScript', 'Nuxt 3', 'Firebase', 'Tailwind CSS'],
     githubUrl: 'https://github.com/imanolcorimayo/instalapro',
     liveUrl: 'https://instalapro-back-office.web.app/',
@@ -143,11 +143,11 @@ const realProjects = [
   {
     id: '4',
     title: 'RAG Playground',
-    description: 'Comprehensive Retrieval-Augmented Generation (RAG) system featuring multiple retrieval strategies and intelligent agent-based approach. Includes traditional semantic search, HyDE method, multi-step retrieval, and AI agent for optimal strategy selection.',
+    description: 'Retrieval-Augmented Generation (RAG) system featuring multiple retrieval strategies and intelligent agent-based approach. Includes traditional semantic search, HyDE method, multi-step retrieval, and AI agent for optimal strategy selection.',
     technologies: ['Python', 'ChromaDB', 'SentenceTransformers', 'Ollama', 'LLM Integration'],
     githubUrl: 'https://github.com/andrealopezpalomeque/rag-playground',
     featured: true,
-    completedDate: '2025-08'
+    completedDate: '2025-06'
   },
   {
     id: '5',
