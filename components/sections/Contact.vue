@@ -7,7 +7,7 @@
 
           <div class="space-y-6">
             <p class="text-lg sm:text-xl text-muted-foreground leading-relaxed">
-              Open to new opportunities and collaborations — happy to connect and exchange ideas.
+              Open to new opportunities and collaborations. Happy to connect and exchange ideas.
             </p>
 
             <div class="space-y-4">
