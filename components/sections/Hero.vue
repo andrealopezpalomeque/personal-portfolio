@@ -4,7 +4,7 @@
       <div class="grid lg:grid-cols-5 gap-12 sm:gap-16 w-full">
         <div class="lg:col-span-3 space-y-6 sm:space-y-8">
           <div class="space-y-3 sm:space-y-2">
-            <div class="text-sm text-muted-foreground font-mono tracking-wider">PORTFOLIO / 2025</div>
+            <div class="text-sm text-muted-foreground font-mono tracking-wider">PORTFOLIO / 2026</div>
             <h1 class="text-5xl sm:text-6xl lg:text-7xl font-light tracking-tight">
               Andrea Victoria
               <br />
@@ -14,7 +14,7 @@
 
           <div class="space-y-6 max-w-md">
             <p class="text-lg sm:text-xl text-muted-foreground leading-relaxed">
-              Frontend Developer crafting interfaces that not only <span class="text-foreground">look good</span> but also <span class="text-foreground">work smarter.</span> I blend <span class="text-foreground">modern web technologies</span> with a curiosity for <span class="text-foreground">AI-driven solutions</span>. I'm passionate about shaping tools that help people and products <span class="text-foreground">grow</span>.
+              Frontend developer with <span class="text-foreground">3 years of experience</span> building clean, performant UIs in <span class="text-foreground">fast-paced startups</span>. I care about <span class="text-foreground">component architecture</span>, user experience, and shipping things that actually work. Currently expanding into <span class="text-foreground">backend development</span> and starting a <span class="text-foreground">Software Engineering degree</span>.
             </p>
 
             <div class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 text-sm text-muted-foreground">
@@ -31,9 +31,8 @@
           <div class="space-y-4">
             <div class="text-sm text-muted-foreground font-mono">CURRENTLY</div>
             <div class="space-y-2">
-              <div class="text-foreground">Frontend Developer</div>
-              <div class="text-muted-foreground">@ Meowtel</div>
-              <div class="text-xs text-muted-foreground">2024 — Present</div>
+              <div class="text-foreground">Building side projects</div>
+              <div class="text-muted-foreground">& starting Software Engineering degree</div>
             </div>
           </div>
 
@@ -60,5 +59,5 @@ defineOptions({
   name: 'SectionsHero'
 })
 
-const focusSkills = ['Vue.js', 'Alpine.js', 'TypeScript', 'Nuxt.js', 'Tailwind CSS', 'Performance', 'SEO', 'PHP + Twig']
+const focusSkills = ['Vue.js', 'Nuxt', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Express', 'Firebase', 'React', 'Performance', 'AI Tools']
 </script>

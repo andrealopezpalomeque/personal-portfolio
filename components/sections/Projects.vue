@@ -112,6 +112,16 @@ defineOptions({
 const realProjects = [
   {
     id: '1',
+    title: 'Text the Check',
+    description: 'Collaborative expense tracking platform for group trips. Users log expenses via a WhatsApp chatbot using natural language, and view real-time balances, reports, and debt settlements on a web dashboard. Built end-to-end: WhatsApp Business API integration, real-time currency conversion, smart expense parsing, and a full reporting system with PDF/Excel export. Currently in closed beta with real user groups.',
+    technologies: ['Nuxt.js', 'Vue 3', 'Tailwind CSS', 'Pinia', 'Node.js', 'Express', 'Firebase Firestore', 'WhatsApp Business API', 'TypeScript'],
+    githubUrl: 'https://github.com/andrealopezpalomeque/viaje-grupo',
+    liveUrl: 'https://textthecheck.app',
+    featured: true,
+    completedDate: '2025-01'
+  },
+  {
+    id: '2',
     title: 'Cruzar Deportes - Sports Jersey E-commerce',
     description: 'Specialized e-commerce platform for sports jerseys and apparel from teams worldwide. Features comprehensive product catalog, shopping cart system, advanced search & filtering, and admin management tools.',
     technologies: ['Nuxt 4', 'Vue 3', 'TypeScript', 'Tailwind CSS', 'Pinia', 'Cloudinary', 'Firebase'],
@@ -119,16 +129,6 @@ const realProjects = [
     liveUrl: 'https://deportes-cruzar.web.app/',
     featured: true,
     completedDate: '2025-09'
-  },
-  {
-    id: '2',
-    title: 'Carnavales Correntinos 2026',
-    description: 'Interactive social platform dedicated to Argentina\'s most important festival - Carnavales Correntinos 2026. Features live countdown, social networking, user profiles, exclusive galleries, and admin management system.',
-    technologies: ['Nuxt 3', 'Vue.js', 'Firebase', 'Firestore', 'Tailwind CSS', 'Pinia'],
-    githubUrl: 'https://github.com/andrealopezpalomeque/carnavales-correntinos-2026',
-    liveUrl: 'https://carnavales-correntinos-2026.web.app/',
-    featured: true,
-    completedDate: '2025-07'
   },
   {
     id: '3',
@@ -142,21 +142,21 @@ const realProjects = [
   },
   {
     id: '4',
+    title: 'Road to TOEFL',
+    description: 'TOEFL exam preparation app featuring multiple practice exercise types: word completion, reading comprehension (daily & academic), listening exercises, speaking prompts, and writing tasks. Designed as a personal learning tool with structured seed data and progressive difficulty.',
+    technologies: ['Vue.js', 'Nuxt 3', 'TypeScript', 'Tailwind CSS', 'Firebase'],
+    githubUrl: 'https://github.com/andrealopezpalomeque/road-2-toefl',
+    featured: true,
+    completedDate: '2025-06'
+  },
+  {
+    id: '5',
     title: 'RAG Playground',
     description: 'Retrieval-Augmented Generation (RAG) system featuring multiple retrieval strategies and intelligent agent-based approach. Includes traditional semantic search, HyDE method, multi-step retrieval, and AI agent for optimal strategy selection.',
     technologies: ['Python', 'ChromaDB', 'SentenceTransformers', 'Ollama', 'LLM Integration'],
     githubUrl: 'https://github.com/andrealopezpalomeque/rag-playground',
     featured: true,
     completedDate: '2025-06'
-  },
-  {
-    id: '5',
-    title: 'Food App',
-    description: 'Full Stack project for Henry\'s bootcamp using React, Redux, Node.js, Express.js and PostgreSQL with modern architecture.',
-    technologies: ['React', 'Redux', 'Node.js', 'Express.js', 'PostgreSQL'],
-    githubUrl: 'https://github.com/andrealopezpalomeque/PI-Food-App-ok',
-    featured: true,
-    completedDate: '2022-12'
   }
 ]
 

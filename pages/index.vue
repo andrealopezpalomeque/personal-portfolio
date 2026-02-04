@@ -36,7 +36,7 @@
         <div class="container-responsive">
           <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 sm:gap-8">
             <div class="space-y-2">
-              <div class="text-sm text-muted-foreground">© 2025 Andrea Victoria López Palomeque. All rights reserved.</div>
+              <div class="text-sm text-muted-foreground">© 2026 Andrea Victoria López Palomeque. All rights reserved.</div>
               <div class="text-xs text-muted-foreground">Built with Nuxt.js and love from Buenos Aires</div>
             </div>
 

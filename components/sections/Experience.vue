@@ -50,7 +50,7 @@ defineOptions({
 
 const experience = [
   {
-    year: "2024",
+    year: "2024 — 2025",
     role: "Frontend Developer",
     company: "Meowtel",
     description: "Migrated key components from Nuxt 3 to PHP/Alpine.js stack. Integrated analytics tools and optimized Core Web Vitals for improved performance.",
