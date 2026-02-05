@@ -156,6 +156,7 @@ const realProjects = [
     description: 'TOEFL exam preparation app featuring multiple practice exercise types: word completion, reading comprehension (daily & academic), listening exercises, speaking prompts, and writing tasks. Designed as a personal learning tool with structured seed data and progressive difficulty.',
     technologies: ['Vue.js', 'Nuxt 3', 'TypeScript', 'Tailwind CSS', 'Firebase'],
     githubUrl: 'https://github.com/andrealopezpalomeque/road-2-toefl',
+    liveUrl: 'https://road-2-toefl.web.app/',
     featured: true,
     completedDate: '2025-11'
   },
