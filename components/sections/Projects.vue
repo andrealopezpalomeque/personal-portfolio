@@ -118,20 +118,30 @@ const realProjects = [
     githubUrl: 'https://github.com/andrealopezpalomeque/viaje-grupo',
     liveUrl: 'https://textthecheck.app',
     featured: true,
-    completedDate: '2025-01'
+    completedDate: '2025-12'
   },
   {
     id: '2',
+    title: 'El Gran Peón',
+    description: 'Full brand identity and e-commerce platform for an Argentine artisanal goods brand specializing in handcrafted mates, bombillas, and leather products rooted in campo culture. Includes a customer-facing storefront with product catalog and a complete back-office system for inventory management, product CRUD, and stock control. Built with a premium, timeless design language reflecting the brand\'s values of craftsmanship and tradition.',
+    technologies: ['Nuxt.js', 'Vue 3', 'Tailwind CSS', 'TypeScript', 'Node.js', 'Express', 'Firebase Firestore', 'Render'],
+    githubUrl: 'https://github.com/andrealopezpalomeque/el-gran-peon',
+    liveUrl: 'https://elgranpeon.com',
+    featured: true,
+    completedDate: '2026-02'
+  },
+  {
+    id: '3',
     title: 'Cruzar Deportes - Sports Jersey E-commerce',
     description: 'Specialized e-commerce platform for sports jerseys and apparel from teams worldwide. Features comprehensive product catalog, shopping cart system, advanced search & filtering, and admin management tools.',
     technologies: ['Nuxt 4', 'Vue 3', 'TypeScript', 'Tailwind CSS', 'Pinia', 'Cloudinary', 'Firebase'],
     githubUrl: 'https://github.com/andrealopezpalomeque/cruzar-deportes/',
     liveUrl: 'https://deportes-cruzar.web.app/',
     featured: true,
-    completedDate: '2025-09'
+    completedDate: '2025-08'
   },
   {
-    id: '3',
+    id: '4',
     title: 'InstalarPro - AC Technician Platform',
     description: 'All-in-one platform connecting air conditioner technicians with clients in Argentina/LATAM. Features three interconnected domains: technician landing pages, back-office management dashboard, and client booking interface. (Project in progress)',
     technologies: ['Vue.js', 'TypeScript', 'Nuxt 3', 'Firebase', 'Tailwind CSS'],
@@ -141,16 +151,16 @@ const realProjects = [
     completedDate: '2025-07'
   },
   {
-    id: '4',
+    id: '5',
     title: 'Road to TOEFL',
     description: 'TOEFL exam preparation app featuring multiple practice exercise types: word completion, reading comprehension (daily & academic), listening exercises, speaking prompts, and writing tasks. Designed as a personal learning tool with structured seed data and progressive difficulty.',
     technologies: ['Vue.js', 'Nuxt 3', 'TypeScript', 'Tailwind CSS', 'Firebase'],
     githubUrl: 'https://github.com/andrealopezpalomeque/road-2-toefl',
     featured: true,
-    completedDate: '2025-06'
+    completedDate: '2025-11'
   },
   {
-    id: '5',
+    id: '6',
     title: 'RAG Playground',
     description: 'Retrieval-Augmented Generation (RAG) system featuring multiple retrieval strategies and intelligent agent-based approach. Includes traditional semantic search, HyDE method, multi-step retrieval, and AI agent for optimal strategy selection.',
     technologies: ['Python', 'ChromaDB', 'SentenceTransformers', 'Ollama', 'LLM Integration'],
