@@ -10,7 +10,7 @@ I'm updating my personal developer portfolio website. The site is built with Nux
 
 ## WHO I AM (use this to rewrite my intro/description)
 
-My name is Andrea Victoria López Palomeque. I'm a frontend developer from Argentina (based in Buenos Aires) with ~3 years of professional experience. I've worked exclusively in startup environments — small teams moving fast, wearing multiple hats, shipping products to real users. I'm used to adapting quickly, learning new technologies on the job, and collaborating closely with designers, backend engineers, and founders.
+My name is Andrea Victoria López Palomeque. I'm a frontend developer from Argentina (based in Buenos Aires) with 43 years of professional experience. I've worked exclusively in startup environments — small teams moving fast, wearing multiple hats, shipping products to real users. I'm used to adapting quickly, learning new technologies on the job, and collaborating closely with designers, backend engineers, and founders.
 
 My core strength is building clean, performant, accessible UIs. I care about component architecture, user experience, and shipping things that actually work well. I'm currently expanding into backend development (Node.js/Express/Firebase) through my side projects, and I'm starting a Software Engineering degree in March 2026 because I want deeper foundations in architecture, algorithms, and systems design.
 

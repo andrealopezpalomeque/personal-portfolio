@@ -53,14 +53,14 @@ const experience = [
     year: "2024 — 2025",
     role: "Frontend Developer",
     company: "Meowtel",
-    description: "Migrated key components from Nuxt 3 to PHP/Alpine.js stack. Integrated analytics tools and optimized Core Web Vitals for improved performance.",
+    description: "Owned frontend web development, building and iterating on key user-facing sections while collaborating closely with product and design on UX and layout decisions. Contributed to experimentation and A/B testing initiatives, implemented analytics and tracking, and optimized performance and Core Web Vitals. As part of broader platform improvements, participated in the gradual migration of selected components from a Nuxt 3 SPA to a PHP/Twig/Alpine.js stack to support performance and SEO goals.",
     tech: ["Vue.js", "Alpine.js", "Tailwind CSS", "PostHog Analytics", "Google Analytics", "Figma", "A/B Testing", "Responsive Design", "Sentry (Error Monitoring)", "Conversion Rate Optimization (CRO)", "UI/UX Collaboration"],
   },
   {
     year: "2024",
     role: "FullStack Developer",
     company: "Asteroid Technologies",
-    description: "Web development using React.js, Next.js, Firebase. Collaborated with UX/UI designers on company website and new projects including Hablalo backoffice.",
+    description: "Web development using React.js, Next.js, Firebase. Collaborated with UX/UI designers on company website and new projects including Hablalo back office.",
     tech: ["React", "Next.js", "Firebase", "Tailwind CSS"]
   },
   {
