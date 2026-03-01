@@ -115,7 +115,7 @@ const realProjects = [
     title: 'Text the Check',
     description: 'Collaborative expense tracking platform for group trips. Users log expenses via a WhatsApp chatbot using natural language, and view real-time balances, reports, and debt settlements on a web dashboard. Built end-to-end: WhatsApp Business API integration, real-time currency conversion, smart expense parsing, and a full reporting system with PDF/Excel export. Currently in closed beta with real user groups.',
     technologies: ['Nuxt.js', 'Vue 3', 'Tailwind CSS', 'Pinia', 'Node.js', 'Express', 'Firebase Firestore', 'WhatsApp Business API', 'TypeScript'],
-    githubUrl: 'https://github.com/andrealopezpalomeque/viaje-grupo',
+    githubUrl: 'https://github.com/andrealopezpalomeque/text-the-check',
     liveUrl: 'https://textthecheck.app',
     featured: true,
     completedDate: '2025-12'
