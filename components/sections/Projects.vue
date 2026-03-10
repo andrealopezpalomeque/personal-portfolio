@@ -113,12 +113,22 @@ const realProjects = [
   {
     id: '1',
     title: 'Text the Check',
-    description: 'Collaborative expense tracking platform for group trips. Users log expenses via a WhatsApp chatbot using natural language, and view real-time balances, reports, and debt settlements on a web dashboard. Built end-to-end: WhatsApp Business API integration, real-time currency conversion, smart expense parsing, and a full reporting system with PDF/Excel export. Currently in closed beta with real user groups.',
+    description: 'WhatsApp-first financial companion with dual modes: Viajes/Grupos for collaborative trip expense tracking with smart settlements, and Mis Finanzas for personal bill tracking and spending insights. Built with Imanol using WhatsApp Business API, Gemini AI for Argentine Spanish parsing, and full reporting system. One brand, two purposes, unified experience.',
     technologies: ['Nuxt.js', 'Vue 3', 'Tailwind CSS', 'Pinia', 'Node.js', 'Express', 'Firebase Firestore', 'WhatsApp Business API', 'TypeScript'],
     githubUrl: 'https://github.com/andrealopezpalomeque/text-the-check',
     liveUrl: 'https://textthecheck.app',
     featured: true,
     completedDate: '2025-12'
+  },
+  {
+    id: '6',
+    title: 'Gasto Obra',
+    description: 'Construction expense management platform built with Imanol. Users log expenses via WhatsApp using natural language, parsed by Gemini AI, while a web dashboard provides real-time insights, calculations, and detailed financial reports. Features automatic categorization, multi-user support, and comprehensive breakdowns by category, person, and time period.',
+    technologies: ['Nuxt 3', 'Vue 3', 'Tailwind CSS', 'Express.js', 'Firebase Firestore', 'WhatsApp Bot', 'Gemini AI'],
+    githubUrl: 'https://github.com/imanolcorimayo/gasto-obra',
+    liveUrl: 'https://gastoobra.wiseutils.com/',
+    featured: true,
+    completedDate: '2026-02'
   },
   {
     id: '2',
@@ -159,15 +169,6 @@ const realProjects = [
     liveUrl: 'https://road-2-toefl.web.app/',
     featured: true,
     completedDate: '2025-11'
-  },
-  {
-    id: '6',
-    title: 'RAG Playground',
-    description: 'Retrieval-Augmented Generation (RAG) system featuring multiple retrieval strategies and intelligent agent-based approach. Includes traditional semantic search, HyDE method, multi-step retrieval, and AI agent for optimal strategy selection.',
-    technologies: ['Python', 'ChromaDB', 'SentenceTransformers', 'Ollama', 'LLM Integration'],
-    githubUrl: 'https://github.com/andrealopezpalomeque/rag-playground',
-    featured: true,
-    completedDate: '2025-06'
   }
 ]
 
