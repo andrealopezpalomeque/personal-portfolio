@@ -4,7 +4,7 @@
       <div class="space-y-12 sm:space-y-16">
         <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
           <h2 class="text-3xl sm:text-4xl font-light">Selected Work</h2>
-          <div class="text-sm text-muted-foreground font-mono">2023 — 2025</div>
+          <div class="text-sm text-muted-foreground font-mono">2023 — Present</div>
         </div>
 
         <div class="space-y-8 sm:space-y-12">
@@ -22,7 +22,8 @@
             <div class="lg:col-span-6 space-y-3">
               <div>
                 <h3 class="text-lg sm:text-xl font-medium">{{ job.role }}</h3>
-                <div class="text-muted-foreground">{{ job.company }}</div>
+                <a v-if="job.url" :href="job.url" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors duration-300 underline underline-offset-4 decoration-border hover:decoration-foreground">{{ job.company }}</a>
+                <div v-else class="text-muted-foreground">{{ job.company }}</div>
               </div>
               <p class="text-muted-foreground leading-relaxed max-w-lg">{{ job.description }}</p>
             </div>
@@ -49,6 +50,14 @@ defineOptions({
 })
 
 const experience = [
+  {
+    year: "2025 — Present",
+    role: "Founder & Developer",
+    company: "WiseUtils",
+    url: "https://wiseutils.com",
+    description: "Co-founded a software company specializing in AI-first solutions for small and medium-sized businesses. Building WhatsApp bots, e-commerce platforms, inventory management systems, RAG-powered search, and intelligent support agents. Working with Vue/Nuxt on the frontend and integrating AI models for automation and data processing.",
+    tech: ["Vue.js", "Nuxt", "Node.js", "AI Integration", "WhatsApp API", "RAG Systems", "Tailwind CSS", "Firebase"],
+  },
   {
     year: "2024 — 2025",
     role: "Frontend Developer",
