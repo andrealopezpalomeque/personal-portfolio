@@ -1,55 +1,47 @@
 <template>
-  <section id="intro" class="min-h-screen flex items-center opacity-0 animate-fade-in-up">
-    <div class="container-responsive">
-      <div class="grid lg:grid-cols-5 gap-12 sm:gap-16 w-full">
-        <div class="lg:col-span-3 space-y-6 sm:space-y-8">
-          <div class="space-y-3 sm:space-y-2">
-            <div class="text-sm text-muted-foreground font-mono tracking-wider">PORTFOLIO / 2026</div>
-            <h1 class="text-5xl sm:text-6xl lg:text-7xl font-light tracking-tight">
-              Andrea Victoria
-              <br />
-              <span class="text-muted-foreground">López Palomeque</span>
-            </h1>
-          </div>
+  <section id="hero" class="min-h-screen flex flex-col px-6 md:px-16 lg:px-24">
+    <!-- Navigation -->
+    <nav class="flex justify-end items-center gap-8 pt-8 md:pt-10 animate-hero-1">
+      <a
+        v-for="link in navLinks"
+        :key="link.label"
+        :href="link.href"
+        class="font-sans text-xs md:text-sm font-medium uppercase tracking-[0.2em] text-text-muted hover:text-text-primary transition-colors duration-300"
+      >
+        {{ link.label }}
+      </a>
+    </nav>
 
-          <div class="space-y-6 max-w-md">
-            <p class="text-lg sm:text-xl text-muted-foreground leading-relaxed">
-              Frontend developer with <span class="text-foreground">4 years of experience</span> building clean, performant UIs in <span class="text-foreground">fast-paced startups</span>. I care about <span class="text-foreground">component architecture</span>, user experience, and shipping things that actually work. Currently expanding into <span class="text-foreground">backend development</span> and starting a <span class="text-foreground">Software Engineering degree</span>.
-            </p>
+    <!-- Main content — positioned at golden ratio (roughly 38% from top) -->
+    <div class="flex-1 flex flex-col justify-center" style="padding-bottom: 12vh;">
+      <!-- Name -->
+      <h1
+        class="font-serif text-text-primary leading-[1.05] animate-hero-1"
+        style="font-size: clamp(2.75rem, 8vw, 7.5rem);"
+      >
+        Andrea López Palomeque
+      </h1>
 
-            <div class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 text-sm text-muted-foreground">
-              <div class="flex items-center gap-2">
-                <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                Available for work
-              </div>
-              <div>Buenos Aires, Argentina</div>
-            </div>
-          </div>
-        </div>
+      <!-- Statement -->
+      <p class="font-sans text-text-secondary text-lg md:text-xl leading-relaxed max-w-2xl mt-6 md:mt-8 animate-hero-2">
+        I build digital spaces for people who care deeply about their craft.
+        <br class="hidden md:block" />
+        Architects, engineers, makers — your work speaks for itself in person.
+        <br class="hidden md:block" />
+        Online, it deserves the same intention.
+      </p>
 
-        <div class="lg:col-span-2 flex flex-col justify-end space-y-6 sm:space-y-8 mt-8 lg:mt-0">
-          <div class="space-y-4">
-            <div class="text-sm text-muted-foreground font-mono">CURRENTLY</div>
-            <div class="space-y-2">
-              <div class="text-foreground">Building side projects</div>
-              <div class="text-muted-foreground">& starting Software Engineering degree</div>
-            </div>
-          </div>
+      <!-- Location label -->
+      <p class="font-sans text-text-muted text-xs md:text-sm uppercase tracking-[0.2em] mt-6 animate-hero-3">
+        Frontend Developer · Buenos Aires
+      </p>
+    </div>
 
-          <div class="space-y-4">
-            <div class="text-sm text-muted-foreground font-mono">FOCUS</div>
-            <div class="flex flex-wrap gap-2">
-              <span
-                v-for="skill in focusSkills"
-                :key="skill"
-                class="px-3 py-1 text-xs border border-border rounded-full hover:border-muted-foreground/50 transition-colors duration-300"
-              >
-                {{ skill }}
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- Scroll indicator -->
+    <div class="flex justify-center pb-8 md:pb-12 animate-hero-4">
+      <span class="text-text-muted text-xs uppercase tracking-[0.3em] animate-scroll-pulse">
+        scroll
+      </span>
     </div>
   </section>
 </template>
@@ -59,5 +51,10 @@ defineOptions({
   name: 'SectionsHero'
 })
 
-const focusSkills = ['Vue.js', 'Nuxt', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Express', 'Firebase', 'React', 'Performance', 'AI Tools']
+const navLinks = [
+  { label: 'Work', href: '#work' },
+  { label: 'About', href: '#about' },
+  { label: 'Contact', href: '#contact' },
+  { label: 'For recruiters', href: '/dev' },
+]
 </script>

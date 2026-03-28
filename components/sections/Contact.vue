@@ -1,81 +1,103 @@
 <template>
-  <section id="contact" class="py-20 sm:py-32 pb-40 sm:pb-52 opacity-0 animate-fade-in-up">
-    <div class="container-responsive">
-      <div class="grid lg:grid-cols-2 gap-12 sm:gap-16">
-        <div class="space-y-6 sm:space-y-8">
-          <h2 class="text-3xl sm:text-4xl font-light">Let's Connect</h2>
+  <section id="contact" class="pt-24 md:pt-40 pb-10 md:pb-14 px-6 md:px-16 lg:px-24">
+    <!-- Heading -->
+    <h2
+      ref="headingRef"
+      class="font-serif text-text-primary leading-[1.1] transition-all duration-1000 ease-out"
+      :class="headingVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'"
+      style="font-size: clamp(2.5rem, 6vw, 5rem);"
+    >
+      Let's talk
+    </h2>
 
-          <div class="space-y-6">
-            <p class="text-lg sm:text-xl text-muted-foreground leading-relaxed">
-              Open to new opportunities and collaborations. Happy to connect and exchange ideas.
-            </p>
+    <!-- Subline -->
+    <p
+      ref="subRef"
+      class="font-sans text-text-secondary text-base md:text-lg leading-relaxed max-w-lg mt-6 md:mt-8 transition-all duration-700 delay-200"
+      :class="subVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'"
+    >
+      Have a project, a brand, or an idea? I'd love to hear about it.
+    </p>
 
-            <div class="space-y-4">
-              <a
-                href="mailto:andrealopezpalomeque@gmail.com"
-                class="group flex items-center gap-3 text-foreground hover:text-muted-foreground transition-colors duration-300"
-              >
-                <span class="text-base sm:text-lg">andrealopezpalomeque@gmail.com</span>
-                <Icon
-                  icon="ph:arrow-right"
-                  class="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
+    <!-- Email -->
+    <a
+      ref="emailRef"
+      href="mailto:andrealopezpalomeque@gmail.com"
+      class="inline-block font-sans text-text-primary text-lg md:text-xl mt-8 md:mt-10 underline underline-offset-4 decoration-divider hover:decoration-text-muted transition-all duration-300"
+      :class="emailVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'"
+    >
+      andrealopezpalomeque@gmail.com
+    </a>
 
-        <div class="space-y-6 sm:space-y-8">
-          <div class="text-sm text-muted-foreground font-mono">ELSEWHERE</div>
-
-          <div class="space-y-4">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <a
-                v-for="social in socialLinks"
-                :key="social.name"
-                :href="social.url"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="group p-4 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300 hover:shadow-sm min-w-0"
-              >
-                <div class="space-y-2 min-w-0">
-                  <div class="text-foreground group-hover:text-muted-foreground transition-colors duration-300">
-                    {{ social.name }}
-                  </div>
-                  <div class="text-sm text-muted-foreground break-words overflow-hidden">{{ social.handle }}</div>
-                </div>
-              </a>
-            </div>
-
-            <a
-              href="/resume/Andrea_Lopez_Palomeque_Resume.pdf"
-              download="Andrea_Lopez_Palomeque_Resume.pdf"
-              class="group p-4 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300 hover:shadow-sm min-w-0 block w-full"
-            >
-              <div class="space-y-2 min-w-0">
-                <div class="text-foreground group-hover:text-muted-foreground transition-colors duration-300">
-                  Download Resume
-                </div>
-                <div class="text-sm text-muted-foreground break-words overflow-hidden">Andrea_Lopez_Palomeque_Resume.pdf</div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
+    <!-- Social links -->
+    <div
+      ref="socialRef"
+      class="flex gap-6 mt-8 md:mt-10 transition-all duration-700"
+      :class="socialVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'"
+    >
+      <a
+        href="https://github.com/andrealopezpalomeque"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="font-sans text-xs font-medium uppercase tracking-[0.2em] text-text-muted hover:text-text-primary transition-colors duration-300"
+      >GitHub</a>
+      <a
+        href="https://www.linkedin.com/in/andrea-victoria-lopez-palomeque/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="font-sans text-xs font-medium uppercase tracking-[0.2em] text-text-muted hover:text-text-primary transition-colors duration-300"
+      >LinkedIn</a>
     </div>
+
+    <!-- Footer -->
+    <p
+      class="font-sans text-text-muted text-xs mt-32 md:mt-48 transition-all duration-700 delay-300"
+      :class="socialVisible ? 'opacity-100' : 'opacity-0'"
+    >
+      &copy; 2026 Andrea López Palomeque
+    </p>
   </section>
 </template>
 
-
 <script setup>
-import { Icon } from '@iconify/vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 
-defineOptions({
-  name: 'SectionsContact'
+defineOptions({ name: 'SectionsContact' })
+
+const headingRef = ref(null)
+const subRef = ref(null)
+const emailRef = ref(null)
+const socialRef = ref(null)
+const headingVisible = ref(false)
+const subVisible = ref(false)
+const emailVisible = ref(false)
+const socialVisible = ref(false)
+
+let observer = null
+
+onMounted(() => {
+  const targets = [
+    [headingRef, () => headingVisible.value = true],
+    [subRef, () => subVisible.value = true],
+    [emailRef, () => emailVisible.value = true],
+    [socialRef, () => socialVisible.value = true],
+  ]
+
+  observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return
+        targets.forEach(([r, set]) => {
+          if (entry.target === r.value) set()
+        })
+        observer.unobserve(entry.target)
+      })
+    },
+    { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
+  )
+
+  targets.forEach(([r]) => { if (r.value) observer.observe(r.value) })
 })
 
-const socialLinks = [
-  { name: 'GitHub', handle: '@andrealopezpalomeque', url: 'https://github.com/andrealopezpalomeque' },
-  { name: 'LinkedIn', handle: 'Andrea Victoria López Palomeque', url: 'https://www.linkedin.com/in/andrea-victoria-lopez-palomeque/' }
-]
+onUnmounted(() => { if (observer) observer.disconnect() })
 </script>

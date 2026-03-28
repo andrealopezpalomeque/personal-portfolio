@@ -29,8 +29,8 @@ export default defineNuxtConfig({
   // Google Fonts configuration
   googleFonts: {
     families: {
-      Geist: [300, 400, 500, 600],
-      'Geist+Mono': [400]
+      'Instrument+Serif': [400],
+      'DM+Sans': [400, 500, 600, 700]
     },
     display: 'swap',
     preconnect: true,
@@ -85,18 +85,18 @@ export default defineNuxtConfig({
   // App configuration
   app: {
     head: {
-      title: 'Andrea Victoria López Palomeque - Frontend Developer',
+      title: 'Andrea López Palomeque — Digital spaces for people who care about their craft',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'Frontend Developer from Buenos Aires specializing in Vue.js, React, and modern web technologies. Available for freelance and full-time opportunities.' },
-        { name: 'author', content: 'Andrea Victoria López Palomeque' },
-        { property: 'og:title', content: 'Andrea Victoria López Palomeque - Frontend Developer' },
-        { property: 'og:description', content: 'Frontend Developer from Buenos Aires specializing in Vue.js, React, and modern web technologies.' },
+        { name: 'description', content: 'I build digital spaces for people who care deeply about their craft. Frontend developer and brand thinker based in Buenos Aires.' },
+        { name: 'author', content: 'Andrea López Palomeque' },
+        { property: 'og:title', content: 'Andrea López Palomeque — Digital spaces for people who care about their craft' },
+        { property: 'og:description', content: 'I build digital spaces for people who care deeply about their craft. Frontend developer and brand thinker based in Buenos Aires.' },
         { property: 'og:type', content: 'website' },
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'Andrea Victoria López Palomeque - Frontend Developer' },
-        { name: 'twitter:description', content: 'Frontend Developer from Buenos Aires specializing in Vue.js, React, and modern web technologies.' }
+        { name: 'twitter:title', content: 'Andrea López Palomeque — Digital spaces for people who care about their craft' },
+        { name: 'twitter:description', content: 'I build digital spaces for people who care deeply about their craft. Frontend developer and brand thinker based in Buenos Aires.' }
       ],
       link: [
         { rel: 'icon', type: 'image/jpeg', href: '/favicon-dark.jpg' }
