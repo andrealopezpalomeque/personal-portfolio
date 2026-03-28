@@ -1,7 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+const ogImageUrl = `https://andrealopezpalomeque.dev/og-image.png?v=${Date.now()}`
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
+
+  runtimeConfig: {
+    public: {
+      ogImageUrl
+    }
+  },
 
   // Enable SSG for static site generation
   ssr: true,
@@ -102,7 +110,7 @@ export default defineNuxtConfig({
         { property: 'og:description', content: 'I build digital spaces for people who care deeply about their craft. Frontend developer and brand thinker based in Buenos Aires.' },
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: 'https://andrealopezpalomeque.dev/' },
-        { property: 'og:image', content: 'https://andrealopezpalomeque.dev/og-image.png' },
+        { property: 'og:image', content: ogImageUrl },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
         { property: 'og:image:alt', content: 'Andrea López Palomeque — Frontend Developer & Brand Thinker' },
@@ -116,7 +124,7 @@ export default defineNuxtConfig({
         { name: 'twitter:creator', content: '@pipilopezpalome' },
         { name: 'twitter:title', content: 'Andrea López Palomeque — Digital spaces for people who care' },
         { name: 'twitter:description', content: 'I build digital spaces for people who care deeply about their craft. Frontend developer and brand thinker based in Buenos Aires.' },
-        { name: 'twitter:image', content: 'https://andrealopezpalomeque.dev/og-image.png' },
+        { name: 'twitter:image', content: ogImageUrl },
         { name: 'twitter:image:alt', content: 'Andrea López Palomeque — Frontend Developer & Brand Thinker' },
         // Additional SEO
         { name: 'theme-color', content: '#F5F2EE' },

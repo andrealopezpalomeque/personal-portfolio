@@ -33,12 +33,14 @@
 </template>
 
 <script setup>
+const { ogImageUrl } = useRuntimeConfig().public
+
 useSeoMeta({
   title: 'Andrea López Palomeque — Digital spaces for people who care about their craft',
   ogTitle: 'Andrea López Palomeque — Digital spaces for people who care about their craft',
   description: 'I build digital spaces for people who care deeply about their craft. Frontend developer and brand thinker based in Buenos Aires.',
   ogDescription: 'I build digital spaces for people who care deeply about their craft. Frontend developer and brand thinker based in Buenos Aires.',
-  ogImage: 'https://andrealopezpalomeque.dev/og-image.png',
+  ogImage: ogImageUrl,
   ogImageType: 'image/png',
   ogImageWidth: 1200,
   ogImageHeight: 630,
@@ -47,7 +49,7 @@ useSeoMeta({
   twitterCreator: '@pipilopezpalome',
   twitterTitle: 'Andrea López Palomeque — Digital spaces for people who care',
   twitterDescription: 'I build digital spaces for people who care deeply about their craft. Frontend developer and brand thinker based in Buenos Aires.',
-  twitterImage: 'https://andrealopezpalomeque.dev/og-image.png',
+  twitterImage: ogImageUrl,
 })
 
 definePageMeta({

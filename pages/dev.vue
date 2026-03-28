@@ -145,12 +145,14 @@
 </template>
 
 <script setup>
+const { ogImageUrl } = useRuntimeConfig().public
+
 useSeoMeta({
   title: 'Andrea López Palomeque — Developer Experience',
   ogTitle: 'Andrea López Palomeque — Developer Experience',
   description: 'Technical background, work history, and projects by Andrea López Palomeque. Vue.js, Nuxt, TypeScript, Tailwind CSS.',
   ogDescription: 'Technical background, work history, and projects by Andrea López Palomeque. Vue.js, Nuxt, TypeScript, Tailwind CSS.',
-  ogImage: 'https://andrealopezpalomeque.dev/og-image.png',
+  ogImage: ogImageUrl,
   ogImageType: 'image/png',
   ogImageWidth: 1200,
   ogImageHeight: 630,
@@ -159,7 +161,7 @@ useSeoMeta({
   twitterCreator: '@pipilopezpalome',
   twitterTitle: 'Andrea López Palomeque — Developer Experience',
   twitterDescription: 'Technical background, work history, and projects by Andrea López Palomeque. Vue.js, Nuxt, TypeScript, Tailwind CSS.',
-  twitterImage: 'https://andrealopezpalomeque.dev/og-image.png',
+  twitterImage: ogImageUrl,
 })
 
 const experience = [
