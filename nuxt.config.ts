@@ -18,8 +18,14 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
     '@vueuse/nuxt',
     'unplugin-icons/nuxt',
-    'dayjs-nuxt'
+    'dayjs-nuxt',
+    '@nuxtjs/sitemap'
   ],
+
+  // Sitemap configuration
+  site: {
+    url: 'https://andrealopezpalomeque.dev'
+  },
 
   // Unplugin Icons configuration
   unpluginIcons: {
@@ -91,13 +97,26 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'description', content: 'I build digital spaces for people who care deeply about their craft. Frontend developer and brand thinker based in Buenos Aires.' },
         { name: 'author', content: 'Andrea López Palomeque' },
+        // Open Graph
         { property: 'og:title', content: 'Andrea López Palomeque — Digital spaces for people who care about their craft' },
         { property: 'og:description', content: 'I build digital spaces for people who care deeply about their craft. Frontend developer and brand thinker based in Buenos Aires.' },
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: 'https://andrealopezpalomeque.dev/' },
+        { property: 'og:image', content: 'https://andrealopezpalomeque.dev/og-image.png' },
+        { property: 'og:image:width', content: '1200' },
+        { property: 'og:image:height', content: '630' },
+        { property: 'og:image:alt', content: 'Andrea López Palomeque — Frontend Developer & Brand Thinker' },
+        { property: 'og:locale', content: 'en_US' },
+        { property: 'og:site_name', content: 'Andrea López Palomeque' },
+        // Twitter Card
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:title', content: 'Andrea López Palomeque — Digital spaces for people who care about their craft' },
-        { name: 'twitter:description', content: 'I build digital spaces for people who care deeply about their craft. Frontend developer and brand thinker based in Buenos Aires.' }
+        { name: 'twitter:description', content: 'I build digital spaces for people who care deeply about their craft. Frontend developer and brand thinker based in Buenos Aires.' },
+        { name: 'twitter:image', content: 'https://andrealopezpalomeque.dev/og-image.png' },
+        { name: 'twitter:image:alt', content: 'Andrea López Palomeque — Frontend Developer & Brand Thinker' },
+        // Additional SEO
+        { name: 'theme-color', content: '#F5F2EE' },
+        { name: 'robots', content: 'index, follow' }
       ],
       link: [
         { rel: 'icon', type: 'image/jpeg', href: '/favicon-dark.jpg' },

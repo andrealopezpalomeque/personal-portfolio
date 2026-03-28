@@ -147,7 +147,12 @@
 <script setup>
 useSeoMeta({
   title: 'Andrea López Palomeque — Developer Experience',
+  ogTitle: 'Andrea López Palomeque — Developer Experience',
   description: 'Technical background, work history, and projects by Andrea López Palomeque. Vue.js, Nuxt, TypeScript, Tailwind CSS.',
+  ogDescription: 'Technical background, work history, and projects by Andrea López Palomeque. Vue.js, Nuxt, TypeScript, Tailwind CSS.',
+  ogImage: 'https://andrealopezpalomeque.dev/og-image.png',
+  twitterCard: 'summary_large_image',
+  twitterImage: 'https://andrealopezpalomeque.dev/og-image.png',
 })
 
 const experience = [

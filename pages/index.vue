@@ -38,7 +38,9 @@ useSeoMeta({
   ogTitle: 'Andrea López Palomeque — Digital spaces for people who care about their craft',
   description: 'I build digital spaces for people who care deeply about their craft. Frontend developer and brand thinker based in Buenos Aires.',
   ogDescription: 'I build digital spaces for people who care deeply about their craft. Frontend developer and brand thinker based in Buenos Aires.',
+  ogImage: 'https://andrealopezpalomeque.dev/og-image.png',
   twitterCard: 'summary_large_image',
+  twitterImage: 'https://andrealopezpalomeque.dev/og-image.png',
 })
 
 definePageMeta({
