@@ -94,12 +94,14 @@ export default defineNuxtConfig({
         { property: 'og:title', content: 'Andrea López Palomeque — Digital spaces for people who care about their craft' },
         { property: 'og:description', content: 'I build digital spaces for people who care deeply about their craft. Frontend developer and brand thinker based in Buenos Aires.' },
         { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: 'https://andrealopezpalomeque.dev/' },
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:title', content: 'Andrea López Palomeque — Digital spaces for people who care about their craft' },
         { name: 'twitter:description', content: 'I build digital spaces for people who care deeply about their craft. Frontend developer and brand thinker based in Buenos Aires.' }
       ],
       link: [
-        { rel: 'icon', type: 'image/jpeg', href: '/favicon-dark.jpg' }
+        { rel: 'icon', type: 'image/jpeg', href: '/favicon-dark.jpg' },
+        { rel: 'canonical', href: 'https://andrealopezpalomeque.dev/' }
       ]
     }
   }

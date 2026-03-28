@@ -2,7 +2,7 @@
 
 ## Context
 
-I'm updating my personal developer portfolio website. The site is built with Nuxt.js, Tailwind CSS, and deployed on Firebase Hosting at https://andrea-lopez-palomeque.web.app/
+I'm updating my personal developer portfolio website. The site is built with Nuxt.js, Tailwind CSS, and deployed on Firebase Hosting at https://andrealopezpalomeque.dev/
 
 **Important:** This is a content and text update — do NOT redesign the site or change its layout/structure/styling. Only update text, dates, descriptions, project entries, and tag lists. Keep the existing design intact.
 

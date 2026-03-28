@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-🌐 View Live Portfolio: [https://andrea-lopez-palomeque.web.app/](https://andrea-lopez-palomeque.web.app/)
+🌐 View Live Portfolio: [https://andrealopezpalomeque.dev/](https://andrealopezpalomeque.dev/)
 
 A modern, responsive personal portfolio website built with Nuxt 4, Vue 3, TypeScript, and Tailwind CSS.
 
