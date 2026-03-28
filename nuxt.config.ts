@@ -108,9 +108,13 @@ export default defineNuxtConfig({
         { property: 'og:image:alt', content: 'Andrea López Palomeque — Frontend Developer & Brand Thinker' },
         { property: 'og:locale', content: 'en_US' },
         { property: 'og:site_name', content: 'Andrea López Palomeque' },
+        // Open Graph image type
+        { property: 'og:image:type', content: 'image/png' },
         // Twitter Card
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'Andrea López Palomeque — Digital spaces for people who care about their craft' },
+        { name: 'twitter:site', content: '@pipilopezpalome' },
+        { name: 'twitter:creator', content: '@pipilopezpalome' },
+        { name: 'twitter:title', content: 'Andrea López Palomeque — Digital spaces for people who care' },
         { name: 'twitter:description', content: 'I build digital spaces for people who care deeply about their craft. Frontend developer and brand thinker based in Buenos Aires.' },
         { name: 'twitter:image', content: 'https://andrealopezpalomeque.dev/og-image.png' },
         { name: 'twitter:image:alt', content: 'Andrea López Palomeque — Frontend Developer & Brand Thinker' },
