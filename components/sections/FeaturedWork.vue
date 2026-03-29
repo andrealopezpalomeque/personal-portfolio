@@ -127,7 +127,7 @@ onMounted(() => {
             labelVisible.value = true
           }
           // Projects
-          projects.forEach((_, i) => {
+          projects.value.forEach((_, i) => {
             if (entry.target === projectRefs[i]) {
               projectVisible[i] = true
             }
@@ -140,7 +140,7 @@ onMounted(() => {
   )
 
   if (labelRef.value) observer.observe(labelRef.value)
-  projects.forEach((_, i) => {
+  projects.value.forEach((_, i) => {
     if (projectRefs[i]) observer.observe(projectRefs[i])
   })
 })

@@ -33,8 +33,8 @@ export default defineNuxtConfig({
 
   i18n: {
     locales: [
-      { code: 'en', file: 'en.json', name: 'English' },
-      { code: 'es', file: 'es.json', name: 'Español' },
+      { code: 'en', file: 'en.json', name: 'English', language: 'en-US' },
+      { code: 'es', file: 'es.json', name: 'Español', language: 'es-AR' },
     ],
     defaultLocale: 'en',
     strategy: 'prefix_except_default',
@@ -127,7 +127,6 @@ export default defineNuxtConfig({
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
         { property: 'og:image:alt', content: 'Andrea López Palomeque — Frontend Developer & Brand Thinker' },
-        { property: 'og:locale', content: 'en_US' },
         { property: 'og:site_name', content: 'Andrea López Palomeque' },
         // Open Graph image type
         { property: 'og:image:type', content: 'image/png' },
