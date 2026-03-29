@@ -27,8 +27,21 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     'unplugin-icons/nuxt',
     'dayjs-nuxt',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    '@nuxtjs/i18n'
   ],
+
+  i18n: {
+    locales: [
+      { code: 'en', file: 'en.json', name: 'English' },
+      { code: 'es', file: 'es.json', name: 'Español' },
+    ],
+    defaultLocale: 'en',
+    strategy: 'prefix_except_default',
+    lazy: true,
+    langDir: 'locales/',
+    detectBrowserLanguage: false,
+  },
 
   // Sitemap configuration
   site: {
