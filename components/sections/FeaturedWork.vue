@@ -23,32 +23,30 @@
           :href="project.url"
           target="_blank"
           rel="noopener noreferrer"
-          class="block overflow-hidden bg-divider"
+          class="block bg-divider transition-transform duration-700 group-hover:scale-[1.02] origin-center"
         >
-          <div class="aspect-[16/10] relative overflow-hidden">
-            <!--
-              To swap in video later, replace the <img> with:
-              <video
-                src="/assets/images/project-slug.mp4"
-                autoplay loop muted playsinline
-                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
-              />
-            -->
-            <picture>
-              <source :srcset="project.imageWebp" type="image/webp" />
-              <img
-                :src="project.image"
-                :alt="project.title"
-                width="2880"
-                height="1870"
-                :loading="index === 0 ? 'eager' : 'lazy'"
-                decoding="async"
-                :fetchpriority="index === 0 ? 'high' : 'auto'"
-                sizes="100vw"
-                class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.02]"
-              />
-            </picture>
-          </div>
+          <!--
+            To swap in video later, replace the <img> with:
+            <video
+              src="/assets/images/project-slug.mp4"
+              autoplay loop muted playsinline
+              class="w-full h-auto block"
+            />
+          -->
+          <picture>
+            <source :srcset="project.imageWebp" type="image/webp" />
+            <img
+              :src="project.image"
+              :alt="project.title"
+              width="2880"
+              height="1870"
+              :loading="index === 0 ? 'eager' : 'lazy'"
+              decoding="async"
+              :fetchpriority="index === 0 ? 'high' : 'auto'"
+              sizes="100vw"
+              class="w-full h-auto block"
+            />
+          </picture>
         </a>
 
         <!-- Project info — staggered reveal -->
@@ -105,7 +103,7 @@ const projects = [
     description: 'Product design and development for an AI-powered WhatsApp bot that reads receipts and splits expenses — turning a messy problem into a clean, instant interaction.',
     image: '/assets/images/text-the-check.png',
     imageWebp: '/assets/images/text-the-check.webp',
-    url: 'https://textthecheck.com',
+    url: 'https://textthecheck.app',
   },
 ]
 
