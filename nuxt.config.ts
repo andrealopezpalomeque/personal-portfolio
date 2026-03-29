@@ -144,8 +144,7 @@ export default defineNuxtConfig({
         { name: 'robots', content: 'index, follow' }
       ],
       link: [
-        { rel: 'icon', type: 'image/jpeg', href: '/favicon-dark.jpg' },
-        { rel: 'canonical', href: 'https://andrealopezpalomeque.dev/' }
+        { rel: 'icon', type: 'image/jpeg', href: '/favicon-dark.jpg' }
       ]
     }
   }
