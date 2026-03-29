@@ -33,13 +33,14 @@
 </template>
 
 <script setup>
+const { t } = useI18n()
 const { ogImageUrl } = useRuntimeConfig().public
 
 useSeoMeta({
-  title: 'Andrea López Palomeque — Digital spaces for people who care about their craft',
-  ogTitle: 'Andrea López Palomeque — Digital spaces for people who care about their craft',
-  description: 'I build digital spaces for people who care deeply about their craft. Frontend developer and brand thinker based in Buenos Aires.',
-  ogDescription: 'I build digital spaces for people who care deeply about their craft. Frontend developer and brand thinker based in Buenos Aires.',
+  title: () => t('seo.homeTitle'),
+  ogTitle: () => t('seo.homeOgTitle'),
+  description: () => t('seo.homeDescription'),
+  ogDescription: () => t('seo.homeDescription'),
   ogImage: ogImageUrl,
   ogImageType: 'image/png',
   ogImageWidth: 1200,
@@ -47,8 +48,8 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
   twitterSite: '@pipilopezpalome',
   twitterCreator: '@pipilopezpalome',
-  twitterTitle: 'Andrea López Palomeque — Digital spaces for people who care',
-  twitterDescription: 'I build digital spaces for people who care deeply about their craft. Frontend developer and brand thinker based in Buenos Aires.',
+  twitterTitle: () => t('seo.homeTwitterTitle'),
+  twitterDescription: () => t('seo.homeDescription'),
   twitterImage: ogImageUrl,
 })
 
