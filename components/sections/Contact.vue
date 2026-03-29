@@ -7,7 +7,7 @@
       :class="headingVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'"
       style="font-size: clamp(2.5rem, 6vw, 5rem);"
     >
-      Let's talk
+      {{ $t('contact.heading') }}
     </h2>
 
     <!-- Subline -->
@@ -16,7 +16,7 @@
       class="font-sans text-text-secondary text-base md:text-lg leading-relaxed max-w-lg mt-6 md:mt-8 transition-all duration-700 delay-200"
       :class="subVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'"
     >
-      Have a project, a brand, or an idea? I'd love to hear about it.
+      {{ $t('contact.subheading') }}
     </p>
 
     <!-- Email -->
@@ -54,7 +54,7 @@
       class="font-sans text-text-muted text-xs mt-32 md:mt-48 transition-all duration-700 delay-300"
       :class="socialVisible ? 'opacity-100' : 'opacity-0'"
     >
-      &copy; 2026 Andrea López Palomeque
+      {{ $t('contact.footer') }}
     </p>
   </section>
 </template>

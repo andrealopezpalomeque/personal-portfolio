@@ -6,7 +6,7 @@
       class="font-sans text-text-muted text-xs uppercase tracking-[0.3em] mb-16 md:mb-24 transition-all duration-700"
       :class="labelVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'"
     >
-      Selected Work
+      {{ $t('featuredWork.sectionLabel') }}
     </p>
 
     <!-- Projects -->
@@ -73,7 +73,7 @@
             class="font-sans text-xs font-medium uppercase tracking-[0.2em] text-accent hover:text-text-primary transition-all duration-300 whitespace-nowrap flex-shrink-0 delay-300"
             :class="projectVisible[index] ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-4'"
           >
-            Visit &rarr;
+            {{ $t('featuredWork.visit') }} &rarr;
           </a>
         </div>
       </article>
@@ -82,17 +82,19 @@
 </template>
 
 <script setup>
-import { ref, reactive, onMounted, onUnmounted } from 'vue'
+import { ref, reactive, computed, onMounted, onUnmounted } from 'vue'
 
 defineOptions({
   name: 'SectionsFeaturedWork'
 })
 
-const projects = [
+const { t } = useI18n()
+
+const projects = computed(() => [
   {
     slug: 'el-gran-peon',
     title: 'El Gran Peón',
-    description: 'Full brand identity and e-commerce platform for an Argentine leather goods brand — from visual language to a store that feels as crafted as the product itself.',
+    description: t('featuredWork.elGranPeon.description'),
     image: '/assets/images/el-gran-peon.png',
     imageWebp: '/assets/images/el-gran-peon.webp',
     url: 'https://elgranpeon.com',
@@ -100,12 +102,12 @@ const projects = [
   {
     slug: 'text-the-check',
     title: 'Text the Check',
-    description: 'Product design and development for an AI-powered WhatsApp bot that reads receipts and splits expenses — turning a messy problem into a clean, instant interaction.',
+    description: t('featuredWork.textTheCheck.description'),
     image: '/assets/images/text-the-check.png',
     imageWebp: '/assets/images/text-the-check.webp',
     url: 'https://textthecheck.app',
   },
-]
+])
 
 // Scroll-reveal state
 const labelRef = ref(null)

@@ -8,13 +8,13 @@
         :class="statementVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'"
         style="font-size: clamp(2rem, 5vw, 3.75rem);"
       >
-        <span class="text-text-primary">Your brand should feel like a natural extension of </span>
-        <span class="text-text-muted italic">who you are.</span>
+        <span class="text-text-primary">{{ $t('manifesto.line1') }}</span>
+        <span class="text-text-muted italic">{{ $t('manifesto.line1Emphasis') }}</span>
         <br />
-        <span class="text-text-primary">Not a template. Not a grid of Instagram posts.</span>
+        <span class="text-text-primary">{{ $t('manifesto.line2') }}</span>
         <br />
-        <span class="text-text-secondary">Something with </span>
-        <span class="text-text-primary">soul.</span>
+        <span class="text-text-secondary">{{ $t('manifesto.line3') }}</span>
+        <span class="text-text-primary">{{ $t('manifesto.line3Emphasis') }}</span>
       </p>
 
       <!-- Supporting line -->
@@ -23,7 +23,7 @@
         class="font-sans text-text-secondary text-base md:text-lg leading-relaxed max-w-2xl mt-10 md:mt-14 transition-all duration-700 delay-300"
         :class="supportVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'"
       >
-        I help independent professionals — architects, engineers, makers — show the world how serious and beautiful their work really is.
+        {{ $t('manifesto.supporting') }}
       </p>
     </div>
   </section>

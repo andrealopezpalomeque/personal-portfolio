@@ -6,7 +6,7 @@
       class="font-sans text-text-muted text-xs uppercase tracking-[0.3em] mb-10 md:mb-14 transition-all duration-700"
       :class="labelVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'"
     >
-      About
+      {{ $t('about.sectionLabel') }}
     </p>
 
     <!-- Divider -->
@@ -22,7 +22,7 @@
         class="font-sans text-text-secondary text-base md:text-lg leading-relaxed transition-all duration-700"
         :class="bio1Visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'"
       >
-        I'm a frontend developer based in Buenos Aires with 4+ years building for startups and independent brands. I work with Vue, Nuxt, TypeScript, and Tailwind — but what sets me apart is that I think like a designer and care like a founder.
+        {{ $t('about.bio1') }}
       </p>
 
       <p
@@ -30,14 +30,14 @@
         class="font-sans text-text-secondary text-base md:text-lg leading-relaxed transition-all duration-700"
         :class="bio2Visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'"
       >
-        I've built e-commerce platforms, AI-powered WhatsApp bots, and brand identities from scratch. Currently co-founding
+        {{ $t('about.bio2Before') }}
         <a
           href="https://wiseutils.com"
           target="_blank"
           rel="noopener noreferrer"
           class="text-text-primary underline underline-offset-4 decoration-divider hover:decoration-text-muted transition-colors duration-300"
-        >WiseUtils</a>
-        with Imanol, building AI-first solutions for small businesses.
+        > {{ $t('about.bio2Link') }}</a>
+        {{ $t('about.bio2After') }}
       </p>
     </div>
 
