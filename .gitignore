@@ -26,6 +26,9 @@ logs
 # Claude Code settings
 .claude/
 
+# Superpowers brainstorm sessions
+.superpowers/
+
 # Firebase
 .firebase
 .firebaserc
