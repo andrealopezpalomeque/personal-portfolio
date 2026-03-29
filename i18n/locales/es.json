@@ -1,1 +1,118 @@
-{}
+{
+  "nav": {
+    "work": "Trabajo",
+    "about": "Sobre mí",
+    "contact": "Contacto",
+    "recruiters": "Para reclutadores"
+  },
+  "hero": {
+    "name": "Andrea López Palomeque",
+    "statement1": "Creo espacios digitales para quienes cuidan cada detalle de su oficio.",
+    "statement2": "Arquitectos, ingenieros, creadores — tu trabajo habla por sí solo en persona.",
+    "statement3": "Online, merece la misma intención.",
+    "label": "Frontend Developer · Buenos Aires",
+    "scroll": "scroll"
+  },
+  "featuredWork": {
+    "sectionLabel": "Trabajo Seleccionado",
+    "visit": "Visitar",
+    "elGranPeon": {
+      "description": "Identidad de marca completa y plataforma e-commerce para una marca argentina de artículos de cuero — desde el lenguaje visual hasta una tienda que se siente tan cuidada como el producto."
+    },
+    "textTheCheck": {
+      "description": "Diseño de producto y desarrollo de un bot de WhatsApp con IA que lee tickets y divide gastos — convirtiendo un problema engorroso en una interacción limpia e instantánea."
+    }
+  },
+  "manifesto": {
+    "line1": "Tu marca debería sentirse como una extensión natural de ",
+    "line1Emphasis": "quien sos.",
+    "line2": "No una plantilla. No una grilla de posts de Instagram.",
+    "line3": "Algo con ",
+    "line3Emphasis": "alma.",
+    "supporting": "Ayudo a profesionales independientes — arquitectos, ingenieros, creadores — a mostrarle al mundo lo serio y hermoso que es su trabajo."
+  },
+  "about": {
+    "sectionLabel": "Sobre mí",
+    "bio1": "Soy desarrolladora frontend en Buenos Aires con más de 4 años construyendo para startups y marcas independientes. Trabajo con Vue, Nuxt, TypeScript y Tailwind — pero lo que me diferencia es que pienso como diseñadora y me involucro como fundadora.",
+    "bio2Before": "Construí plataformas e-commerce, bots de WhatsApp con IA e identidades de marca desde cero. Actualmente co-fundando",
+    "bio2Link": "WiseUtils",
+    "bio2After": "con Imanol, creando soluciones AI-first para pequeñas empresas."
+  },
+  "contact": {
+    "heading": "Hablemos",
+    "subheading": "¿Tenés un proyecto, una marca o una idea? Me encantaría escucharte.",
+    "footer": "© 2026 Andrea López Palomeque"
+  },
+  "dev": {
+    "backLink": "Andrea López Palomeque",
+    "downloadResume": "Descargar CV",
+    "pageTitle": "Experiencia Profesional",
+    "pageSubtitle": "Historial laboral, tecnologías y proyectos con código.",
+    "experienceLabel": "Experiencia",
+    "projectsLabel": "Proyectos",
+    "skillsLabel": "Habilidades y Herramientas",
+    "codeLink": "Código",
+    "liveLink": "Demo",
+    "footer": "© 2026 Andrea López Palomeque",
+    "experience": {
+      "wiseutils": {
+        "year": "2025 — Presente",
+        "role": "Founder & Developer",
+        "company": "WiseUtils",
+        "description": "Co-fundé una empresa de software especializada en soluciones AI-first para pequeñas y medianas empresas. Desarrollo de bots de WhatsApp, plataformas e-commerce, sistemas de gestión de inventario, búsqueda con RAG y agentes de soporte inteligentes."
+      },
+      "meowtel": {
+        "year": "2024 — 2025",
+        "role": "Frontend Developer",
+        "company": "Meowtel",
+        "description": "Responsable del desarrollo frontend web, construyendo e iterando secciones clave para el usuario. Contribuí en A/B testing, implementé analytics y tracking, y optimicé Core Web Vitals. Participé en la migración de Nuxt 3 SPA a PHP/Twig/Alpine.js para performance y SEO."
+      },
+      "asteroid": {
+        "year": "2024",
+        "role": "FullStack Developer",
+        "company": "Asteroid Technologies",
+        "description": "Desarrollo web con React.js, Next.js, Firebase. Colaboré con diseñadores UX/UI en el sitio web de la empresa y nuevos proyectos incluyendo el back office de Hablalo."
+      },
+      "telco": {
+        "year": "2023",
+        "role": "Frontend Developer",
+        "company": "TelCo SAPEM",
+        "description": "Desarrollé la app de pagos Wee! Pagos y la app de ticketing Wee!pas usando Vue.js. Construí la app móvil Recolector desde cero en React Native."
+      }
+    },
+    "projects": {
+      "textTheCheck": {
+        "description": "Compañero financiero WhatsApp-first con dos modos: seguimiento colaborativo de gastos de viaje y seguimiento personal de cuentas. Construido con WhatsApp Business API y Gemini AI para parseo en español argentino."
+      },
+      "gastoObra": {
+        "description": "Plataforma de gestión de gastos de obra. Los usuarios registran gastos por WhatsApp usando lenguaje natural parseado por Gemini AI, con un dashboard web para insights en tiempo real e informes financieros."
+      },
+      "elGranPeon": {
+        "description": "Identidad de marca completa y plataforma e-commerce para una marca argentina de artículos artesanales. Tienda para clientes más back-office completo para gestión de inventario y control de stock."
+      },
+      "cruzarDeportes": {
+        "description": "Plataforma e-commerce de camisetas y ropa deportiva. Catálogo de productos, carrito de compras, búsqueda y filtrado avanzado, y herramientas de administración."
+      },
+      "instalarPro": {
+        "description": "Plataforma que conecta técnicos de aire acondicionado con clientes en Argentina/LATAM. Tres dominios interconectados: landing pages de técnicos, dashboard de back-office y reservas de clientes."
+      },
+      "roadToToefl": {
+        "description": "App de preparación para el examen TOEFL con completar palabras, comprensión lectora, ejercicios de listening, prompts de speaking y tareas de writing."
+      }
+    },
+    "skills": {
+      "frontend": "Frontend",
+      "backend": "Backend y Datos",
+      "tools": "Herramientas y Otros"
+    }
+  },
+  "seo": {
+    "homeTitle": "Andrea López Palomeque — Espacios digitales para quienes cuidan su oficio",
+    "homeDescription": "Creo espacios digitales para quienes cuidan cada detalle de su oficio. Desarrolladora frontend y pensadora de marca en Buenos Aires.",
+    "homeOgTitle": "Andrea López Palomeque — Espacios digitales para quienes cuidan su oficio",
+    "homeTwitterTitle": "Andrea López Palomeque — Espacios digitales para quienes cuidan su oficio",
+    "devTitle": "Andrea López Palomeque — Experiencia Profesional",
+    "devDescription": "Trayectoria técnica, historial laboral y proyectos de Andrea López Palomeque. Vue.js, Nuxt, TypeScript, Tailwind CSS.",
+    "ogImageAlt": "Andrea López Palomeque — Frontend Developer & Brand Thinker"
+  }
+}
