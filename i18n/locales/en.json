@@ -24,6 +24,9 @@
     },
     "gastoObra": {
       "description": "Product design and development for an AI-powered construction tracker — taking the chaos of a job site and turning it into a clean, real-time expense dashboard that builders and clients can both trust."
+    },
+    "routeAI": {
+      "description": "Product design and development for an AI-powered route planner — describe your stops in plain words, and Gemini figures out the optimal order and opens Google Maps with everything pre-filled."
     }
   },
   "manifesto": {
@@ -98,6 +101,9 @@
       },
       "instalarPro": {
         "description": "Platform connecting AC technicians with clients in Argentina/LATAM. Three interconnected domains: technician landing pages, back-office dashboard, and client booking."
+      },
+      "routeAI": {
+        "description": "Natural language route planner PWA. Users describe their stops by text or voice; Gemini AI extracts, orders, and optimizes them, then opens Google Maps with everything pre-filled. Built as a Nuxt 4 + Express monorepo with server-side AI calls to keep API keys secure."
       },
       "roadToToefl": {
         "description": "TOEFL exam prep app with word completion, reading comprehension, listening exercises, speaking prompts, and writing tasks."

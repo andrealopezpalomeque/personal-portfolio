@@ -254,6 +254,15 @@ const projects = computed(() => [
     completedDate: '2025-08',
   },
   {
+    id: '7',
+    title: 'Route AI',
+    description: t('dev.projects.routeAI.description'),
+    technologies: ['Nuxt 4', 'Vue 3', 'TypeScript', 'Express.js', 'Gemini AI', 'Pinia', 'PWA', 'Firebase', 'Web Speech API'],
+    githubUrl: 'https://github.com/andrealopezpalomeque/root-ai',
+    liveUrl: 'https://routeai.tech',
+    completedDate: '2026-03',
+  },
+  {
     id: '4',
     title: 'InstalarPro',
     description: t('dev.projects.instalarPro.description'),

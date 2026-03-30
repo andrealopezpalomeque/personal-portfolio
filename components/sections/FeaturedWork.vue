@@ -38,8 +38,8 @@
             <img
               :src="project.image"
               :alt="project.title"
-              width="2880"
-              height="1870"
+              :width="project.width"
+              :height="project.height"
               :loading="index === 0 ? 'eager' : 'lazy'"
               decoding="async"
               :fetchpriority="index === 0 ? 'high' : 'auto'"
@@ -98,6 +98,8 @@ const projects = computed(() => [
     image: '/assets/images/el-gran-peon.png',
     imageWebp: '/assets/images/el-gran-peon.webp',
     url: 'https://elgranpeon.com',
+    width: 2880,
+    height: 1870,
   },
   {
     slug: 'text-the-check',
@@ -106,6 +108,8 @@ const projects = computed(() => [
     image: '/assets/images/text-the-check.png',
     imageWebp: '/assets/images/text-the-check.webp',
     url: 'https://textthecheck.app',
+    width: 2880,
+    height: 1870,
   },
   {
     slug: 'gasto-obra',
@@ -114,6 +118,18 @@ const projects = computed(() => [
     image: '/assets/images/gasto-obra.png',
     imageWebp: '/assets/images/gasto-obra.webp',
     url: 'https://gastoobra.com',
+    width: 2880,
+    height: 1870,
+  },
+  {
+    slug: 'route-ai',
+    title: 'Route AI',
+    description: t('featuredWork.routeAI.description'),
+    image: '/assets/images/route-ai.png',
+    imageWebp: '/assets/images/route-ai.webp',
+    url: 'https://routeai.tech',
+    width: 2880,
+    height: 1914,
   },
 ])
 
