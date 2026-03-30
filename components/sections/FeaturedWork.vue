@@ -107,6 +107,14 @@ const projects = computed(() => [
     imageWebp: '/assets/images/text-the-check.webp',
     url: 'https://textthecheck.app',
   },
+  {
+    slug: 'gasto-obra',
+    title: 'Gasto Obra',
+    description: t('featuredWork.gastoObra.description'),
+    image: '/assets/images/gasto-obra.png',
+    imageWebp: '/assets/images/gasto-obra.webp',
+    url: 'https://gastoobra.com',
+  },
 ])
 
 // Scroll-reveal state

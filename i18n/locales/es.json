@@ -21,6 +21,9 @@
     },
     "textTheCheck": {
       "description": "Diseño de producto y desarrollo de un bot de WhatsApp con IA que lee tickets y divide gastos — convirtiendo un problema engorroso en una interacción limpia e instantánea."
+    },
+    "gastoObra": {
+      "description": "Diseño de producto y desarrollo de un tracker de gastos de obra con IA — tomando el caos de una obra en marcha y convirtiéndolo en un tablero limpio y en tiempo real en el que constructores y clientes pueden confiar."
     }
   },
   "manifesto": {

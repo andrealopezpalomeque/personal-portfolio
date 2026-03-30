@@ -21,6 +21,9 @@
     },
     "textTheCheck": {
       "description": "Product design and development for an AI-powered WhatsApp bot that reads receipts and splits expenses — turning a messy problem into a clean, instant interaction."
+    },
+    "gastoObra": {
+      "description": "Product design and development for an AI-powered construction tracker — taking the chaos of a job site and turning it into a clean, real-time expense dashboard that builders and clients can both trust."
     }
   },
   "manifesto": {
