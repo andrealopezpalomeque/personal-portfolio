@@ -52,7 +52,7 @@ defineOptions({
 const experience = [
   {
     year: "2025 — Present",
-    role: "Founder & Developer",
+    role: "Co-founder & Developer",
     company: "WiseUtils",
     url: "https://wiseutils.com",
     description: "Co-founded a software company specializing in AI-first solutions for small and medium-sized businesses. Building WhatsApp bots, e-commerce platforms, inventory management systems, RAG-powered search, and intelligent support agents. Working with Vue/Nuxt on the frontend and integrating AI models for automation and data processing.",
