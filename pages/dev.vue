@@ -258,7 +258,7 @@ const projects = computed(() => [
     title: 'Route AI',
     description: t('dev.projects.routeAI.description'),
     technologies: ['Nuxt 4', 'Vue 3', 'TypeScript', 'Express.js', 'Gemini AI', 'Pinia', 'PWA', 'Firebase', 'Web Speech API'],
-    githubUrl: 'https://github.com/andrealopezpalomeque/root-ai',
+    githubUrl: 'https://github.com/andrealopezpalomeque/route-ai',
     liveUrl: 'https://routeai.tech',
     completedDate: '2026-03',
   },
