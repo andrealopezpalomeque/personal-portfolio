@@ -1,34 +1,48 @@
 <template>
   <section id="hero" class="min-h-screen flex flex-col px-6 md:px-16 lg:px-24">
     <!-- Navigation -->
-    <nav class="flex justify-center md:justify-end items-center gap-4 sm:gap-6 md:gap-8 pt-8 md:pt-10 animate-hero-1 flex-wrap">
-      <a
-        v-for="link in navLinks"
-        :key="link.key"
-        :href="link.href"
-        class="font-sans text-xs md:text-sm font-medium uppercase tracking-[0.2em] text-text-muted hover:text-text-primary transition-colors duration-300 whitespace-nowrap"
-      >
-        {{ $t(link.key) }}
-      </a>
+    <nav class="flex flex-col items-center md:items-end gap-3 md:gap-0 pt-8 md:pt-10 animate-hero-1">
+      <div class="flex justify-center md:justify-end items-center gap-4 sm:gap-6 md:gap-8 flex-wrap">
+        <a
+          v-for="link in navLinks"
+          :key="link.key"
+          :href="link.href"
+          class="font-sans text-xs md:text-sm font-medium uppercase tracking-[0.2em] text-text-muted hover:text-text-primary transition-colors duration-300 whitespace-nowrap"
+        >
+          {{ $t(link.key) }}
+        </a>
 
-      <!-- Language switcher -->
-      <span class="w-px h-3.5 bg-divider"></span>
-      <div class="flex items-center gap-2">
-        <NuxtLink
-          :to="switchLocalePath('en')"
-          class="font-sans text-[11px] tracking-[0.06em] uppercase transition-colors duration-300"
-          :class="locale === 'en' ? 'text-text-primary font-semibold' : 'text-text-muted hover:text-text-primary'"
-        >
-          EN
-        </NuxtLink>
-        <NuxtLink
-          :to="switchLocalePath('es')"
-          class="font-sans text-[11px] tracking-[0.06em] uppercase transition-colors duration-300"
-          :class="locale === 'es' ? 'text-text-primary font-semibold' : 'text-text-muted hover:text-text-primary'"
-        >
-          ES
-        </NuxtLink>
+        <!-- Language switcher -->
+        <span class="w-px h-3.5 bg-divider"></span>
+        <div class="flex items-center gap-2">
+          <NuxtLink
+            :to="switchLocalePath('en')"
+            class="font-sans text-[11px] tracking-[0.06em] uppercase transition-colors duration-300"
+            :class="locale === 'en' ? 'text-text-primary font-semibold' : 'text-text-muted hover:text-text-primary'"
+          >
+            EN
+          </NuxtLink>
+          <NuxtLink
+            :to="switchLocalePath('es')"
+            class="font-sans text-[11px] tracking-[0.06em] uppercase transition-colors duration-300"
+            :class="locale === 'es' ? 'text-text-primary font-semibold' : 'text-text-muted hover:text-text-primary'"
+          >
+            ES
+          </NuxtLink>
+        </div>
+
+        <!-- Signature inline on desktop -->
+        <div
+          class="hidden md:block ml-6 w-[120px] h-[50px] -rotate-[1.5deg]"
+          style="background-color: var(--text-muted); -webkit-mask-image: url('/images/signature.svg'); -webkit-mask-size: contain; -webkit-mask-repeat: no-repeat; mask-image: url('/images/signature.svg'); mask-size: contain; mask-repeat: no-repeat;"
+        ></div>
       </div>
+
+      <!-- Signature below nav on mobile -->
+      <div
+        class="md:hidden w-[110px] h-[45px] -rotate-[1.5deg] mt-1"
+        style="background-color: var(--text-muted); -webkit-mask-image: url('/images/signature.svg'); -webkit-mask-size: contain; -webkit-mask-repeat: no-repeat; mask-image: url('/images/signature.svg'); mask-size: contain; mask-repeat: no-repeat;"
+      ></div>
     </nav>
 
     <!-- Main content — positioned at golden ratio (roughly 38% from top) -->
