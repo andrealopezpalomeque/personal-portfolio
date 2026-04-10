@@ -142,6 +142,14 @@ export default defineNuxtConfig({
         { name: 'theme-color', content: '#F5F2EE' },
         { name: 'robots', content: 'index, follow' }
       ],
+      script: [
+        {
+          // Redirect any non-canonical domain (e.g. .web.app) to the primary domain
+          // while preserving the full pathname.
+          innerHTML: `if(location.hostname!=="andrealopezpalomeque.dev"){location.replace("https://andrealopezpalomeque.dev"+location.pathname+location.search);}`,
+          tagPriority: 'critical'
+        }
+      ],
       link: [
         { rel: 'icon', type: 'image/jpeg', href: '/favicon-dark.jpg' }
       ]
