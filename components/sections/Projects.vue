@@ -151,6 +151,16 @@ const realProjects = [
     completedDate: '2025-08'
   },
   {
+    id: '7',
+    title: 'Arq. Agustina Carbajal - Architect Portfolio',
+    description: 'Portfolio website for architect Agustina Carbajal. Gallery-like digital space with bilingual support (ES/EN), room-based color transitions, scroll-reveal animations, and a design system built around architectural typography. Designed and developed as a brand experience, not a template.',
+    technologies: ['Nuxt 4', 'Vue 3', 'TypeScript', 'Tailwind CSS', 'i18n', 'Firebase'],
+    githubUrl: 'https://github.com/andrealopezpalomeque/arq-agustina-carbajal',
+    liveUrl: 'https://agustinacarbajal.archi',
+    featured: true,
+    completedDate: '2026-04'
+  },
+  {
     id: '4',
     title: 'InstalarPro - AC Technician Platform',
     description: 'All-in-one platform connecting air conditioner technicians with clients in Argentina/LATAM. Features three interconnected domains: technician landing pages, back-office management dashboard, and client booking interface. (Project in progress)',

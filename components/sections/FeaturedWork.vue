@@ -112,6 +112,16 @@ const projects = computed(() => [
     height: 1870,
   },
   {
+    slug: 'arq-agustina-carbajal',
+    title: 'Arq. Agustina Carbajal',
+    description: t('featuredWork.arqAgustinaCarbajal.description'),
+    image: '/assets/images/arq-agustina-carbajal.png',
+    imageWebp: '/assets/images/arq-agustina-carbajal.webp',
+    url: 'https://agustinacarbajal.archi',
+    width: 2880,
+    height: 2470,
+  },
+  {
     slug: 'text-the-check',
     title: 'Text the Check',
     description: t('featuredWork.textTheCheck.description'),

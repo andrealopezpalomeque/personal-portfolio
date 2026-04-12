@@ -22,6 +22,9 @@
     "cruzarDeportes": {
       "description": "Plataforma e-commerce completa para una marca argentina de ropa deportiva — una tienda curada de camisetas y equipamiento de equipos de todo el mundo."
     },
+    "arqAgustinaCarbajal": {
+      "description": "Sitio portfolio para la arquitecta Agustina Carbajal — un espacio digital con alma de galería y soporte bilingüe, diseñado para sentirse como recorrer las salas de su obra en vez de scrollear una página."
+    },
     "textTheCheck": {
       "description": "Diseño de producto y desarrollo de un bot de WhatsApp con IA que lee tickets y divide gastos — convirtiendo un problema engorroso en una interacción limpia e instantánea."
     },
@@ -101,6 +104,9 @@
       },
       "cruzarDeportes": {
         "description": "Plataforma e-commerce de camisetas y ropa deportiva. Catálogo de productos, carrito de compras, búsqueda y filtrado avanzado, y herramientas de administración."
+      },
+      "arqAgustinaCarbajal": {
+        "description": "Portfolio de arquitecta con diseño espacial tipo galería, soporte bilingüe (ES/EN), transiciones de color por salas y animaciones de scroll-reveal. Construido como experiencia de marca para Agustina Carbajal."
       },
       "instalarPro": {
         "description": "Plataforma que conecta técnicos de aire acondicionado con clientes en Argentina/LATAM. Tres dominios interconectados: landing pages de técnicos, dashboard de back-office y reservas de clientes."

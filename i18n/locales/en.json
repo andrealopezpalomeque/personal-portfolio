@@ -22,6 +22,9 @@
     "cruzarDeportes": {
       "description": "Full e-commerce platform for an Argentine sports apparel brand — a curated storefront for football jerseys and team gear from leagues around the world."
     },
+    "arqAgustinaCarbajal": {
+      "description": "Portfolio website for architect Agustina Carbajal — a gallery-like digital space with bilingual support, designed to feel like walking through rooms of her work rather than scrolling a page."
+    },
     "textTheCheck": {
       "description": "Product design and development for an AI-powered WhatsApp bot that reads receipts and splits expenses — turning a messy problem into a clean, instant interaction."
     },
@@ -101,6 +104,9 @@
       },
       "cruzarDeportes": {
         "description": "E-commerce platform for sports jerseys and apparel. Features product catalog, shopping cart, advanced search & filtering, and admin management tools."
+      },
+      "arqAgustinaCarbajal": {
+        "description": "Architect portfolio with gallery-like spatial design, bilingual support (ES/EN), room-based color transitions, and scroll-reveal animations. Built as a brand experience for Agustina Carbajal."
       },
       "instalarPro": {
         "description": "Platform connecting AC technicians with clients in Argentina/LATAM. Three interconnected domains: technician landing pages, back-office dashboard, and client booking."
