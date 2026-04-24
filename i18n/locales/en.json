@@ -45,7 +45,7 @@
   },
   "about": {
     "sectionLabel": "About",
-    "bio1": "I'm a frontend developer based in Buenos Aires with 4+ years building for startups and independent brands. I work with Vue, Nuxt, TypeScript, and Tailwind — but what sets me apart is that I think like a designer and care like a founder.",
+    "bio1": "I'm a frontend developer based in Buenos Aires with 4+ years building for startups and independent brands. I work across the JavaScript ecosystem — React, Next.js, Vue, Nuxt, TypeScript, and Tailwind — but what sets me apart is that I think like a designer and care like a founder.",
     "bio2Before": "I've built e-commerce platforms, AI-powered WhatsApp bots, and brand identities from scratch. Currently co-founding",
     "bio2Link": "WiseUtils",
     "bio2After": "with Imanol, building AI-first solutions for small businesses."
@@ -77,7 +77,7 @@
         "year": "2024 — 2025",
         "role": "Frontend Developer",
         "company": "Meowtel",
-        "description": "Owned frontend web development, building and iterating on key user-facing sections. Contributed to A/B testing, implemented analytics and tracking, and optimized Core Web Vitals. Participated in migration from Nuxt 3 SPA to PHP/Twig/Alpine.js for performance and SEO."
+        "description": "Owned frontend web development, building and iterating on key user-facing sections. Contributed to A/B testing, implemented analytics and tracking, and optimized Core Web Vitals. Participated in the gradual migration of selected components from a Vue-based SPA to React and Next.js for performance and SEO."
       },
       "asteroid": {
         "year": "2024",
@@ -89,7 +89,7 @@
         "year": "2023",
         "role": "Frontend Developer",
         "company": "TelCo SAPEM",
-        "description": "Developed Wee! Pagos payment app and Wee!pas ticketing app using Vue.js. Built Recolector mobile app from scratch in React Native."
+        "description": "Developed Wee! Pagos payment app and Wee!pas ticketing app using React and Next.js. Built Recolector mobile app from scratch in React Native."
       }
     },
     "projects": {
@@ -130,6 +130,6 @@
     "homeOgTitle": "Andrea López Palomeque — Digital spaces for people who care about their craft",
     "homeTwitterTitle": "Andrea López Palomeque — Digital spaces for people who care",
     "devTitle": "Andrea López Palomeque — Developer Experience",
-    "devDescription": "Technical background, work history, and projects by Andrea López Palomeque. Vue.js, Nuxt, TypeScript, Tailwind CSS."
+    "devDescription": "Technical background, work history, and projects by Andrea López Palomeque. React, Next.js, Vue, Nuxt, TypeScript, Tailwind CSS."
   }
 }

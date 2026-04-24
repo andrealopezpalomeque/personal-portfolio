@@ -45,7 +45,7 @@
   },
   "about": {
     "sectionLabel": "Sobre mí",
-    "bio1": "Soy desarrolladora frontend en Buenos Aires con más de 4 años construyendo para startups y marcas independientes. Trabajo con Vue, Nuxt, TypeScript y Tailwind — pero lo que me diferencia es que pienso como diseñadora y me involucro como fundadora.",
+    "bio1": "Soy desarrolladora frontend en Buenos Aires con más de 4 años construyendo para startups y marcas independientes. Trabajo en todo el ecosistema JavaScript — React, Next.js, Vue, Nuxt, TypeScript y Tailwind — pero lo que me diferencia es que pienso como diseñadora y me involucro como fundadora.",
     "bio2Before": "Construí plataformas e-commerce, bots de WhatsApp con IA e identidades de marca desde cero. Actualmente co-fundando",
     "bio2Link": "WiseUtils",
     "bio2After": "con Imanol, creando soluciones AI-first para pequeñas empresas."
@@ -77,7 +77,7 @@
         "year": "2024 — 2025",
         "role": "Frontend Developer",
         "company": "Meowtel",
-        "description": "Responsable del desarrollo frontend web, construyendo e iterando secciones clave para el usuario. Contribuí en A/B testing, implementé analytics y tracking, y optimicé Core Web Vitals. Participé en la migración de Nuxt 3 SPA a PHP/Twig/Alpine.js para performance y SEO."
+        "description": "Responsable del desarrollo frontend web, construyendo e iterando secciones clave para el usuario. Contribuí en A/B testing, implementé analytics y tracking, y optimicé Core Web Vitals. Participé en la migración gradual de componentes seleccionados desde una SPA basada en Vue hacia React y Next.js para mejorar performance y SEO."
       },
       "asteroid": {
         "year": "2024",
@@ -89,7 +89,7 @@
         "year": "2023",
         "role": "Frontend Developer",
         "company": "TelCo SAPEM",
-        "description": "Desarrollé la app de pagos Wee! Pagos y la app de ticketing Wee!pas usando Vue.js. Construí la app móvil Recolector desde cero en React Native."
+        "description": "Desarrollé la app de pagos Wee! Pagos y la app de ticketing Wee!pas usando React y Next.js. Construí la app móvil Recolector desde cero en React Native."
       }
     },
     "projects": {
@@ -130,6 +130,6 @@
     "homeOgTitle": "Andrea López Palomeque — Espacios digitales para quienes cuidan su oficio",
     "homeTwitterTitle": "Andrea López Palomeque — Espacios digitales para quienes cuidan su oficio",
     "devTitle": "Andrea López Palomeque — Experiencia Profesional",
-    "devDescription": "Trayectoria técnica, historial laboral y proyectos de Andrea López Palomeque. Vue.js, Nuxt, TypeScript, Tailwind CSS."
+    "devDescription": "Trayectoria técnica, historial laboral y proyectos de Andrea López Palomeque. React, Next.js, Vue, Nuxt, TypeScript, Tailwind CSS."
   }
 }

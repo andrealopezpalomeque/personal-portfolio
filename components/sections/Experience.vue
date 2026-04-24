@@ -55,15 +55,15 @@ const experience = [
     role: "Co-founder & Developer",
     company: "WiseUtils",
     url: "https://wiseutils.com",
-    description: "Co-founded a software company specializing in AI-first solutions for small and medium-sized businesses. Building WhatsApp bots, e-commerce platforms, inventory management systems, RAG-powered search, and intelligent support agents. Working with Vue/Nuxt on the frontend and integrating AI models for automation and data processing.",
-    tech: ["Vue.js", "Nuxt", "Node.js", "AI Integration", "WhatsApp API", "RAG Systems", "Tailwind CSS", "Firebase"],
+    description: "Co-founded a software company specializing in AI-first solutions for small and medium-sized businesses. Building WhatsApp bots, e-commerce platforms, inventory management systems, RAG-powered search, and intelligent support agents. Working with React and Next.js on the frontend and integrating AI models for automation and data processing.",
+    tech: ["React", "Next.js", "TypeScript", "Node.js", "AI Integration", "WhatsApp API", "RAG Systems", "Tailwind CSS", "Firebase"],
   },
   {
     year: "2024 — 2025",
     role: "Frontend Developer",
     company: "Meowtel",
-    description: "Owned frontend web development, building and iterating on key user-facing sections while collaborating closely with product and design on UX and layout decisions. Contributed to experimentation and A/B testing initiatives, implemented analytics and tracking, and optimized performance and Core Web Vitals. As part of broader platform improvements, participated in the gradual migration of selected components from a Nuxt 3 SPA to a PHP/Twig/Alpine.js stack to support performance and SEO goals.",
-    tech: ["Vue.js", "Alpine.js", "Tailwind CSS", "PostHog Analytics", "Google Analytics", "Figma", "A/B Testing", "Responsive Design", "Sentry (Error Monitoring)", "Conversion Rate Optimization (CRO)", "UI/UX Collaboration"],
+    description: "Owned frontend web development, building and iterating on key user-facing sections while collaborating closely with product and design on UX and layout decisions. Contributed to experimentation and A/B testing initiatives, implemented analytics and tracking, and optimized performance and Core Web Vitals. As part of broader platform improvements, participated in the gradual migration of selected components from a Vue-based SPA to React and Next.js to support performance and SEO goals.",
+    tech: ["Vue.js", "React", "Next.js", "Tailwind CSS", "PostHog Analytics", "Google Analytics", "Figma", "A/B Testing", "Responsive Design", "Sentry (Error Monitoring)", "Conversion Rate Optimization (CRO)", "UI/UX Collaboration"],
   },
   {
     year: "2024",
@@ -76,8 +76,8 @@ const experience = [
     year: "2023",
     role: "Frontend Developer",
     company: "TelCo SAPEM",
-    description: "Developed Wee! Pagos payment app and Wee!pas ticketing app using Vue.js. Built Recolector mobile app from scratch in React Native.",
-    tech: ["Vue.js", "React Native", "Vuetify", "Pinia"]
+    description: "Developed Wee! Pagos payment app and Wee!pas ticketing app using React and Next.js. Built Recolector mobile app from scratch in React Native.",
+    tech: ["React", "Next.js", "React Native", "Redux", "Zustand"]
   }
 ]
 </script>

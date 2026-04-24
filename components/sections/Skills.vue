@@ -186,8 +186,8 @@ const skillCategories = [
     description: 'Modern UI/UX with responsive design',
     icon: 'ph:monitor',
     skills: [
+      { name: 'React/Next.js', level: 'advanced', icon: 'logos:react' },
       { name: 'Vue.js/Nuxt.js', level: 'advanced', icon: 'logos:vue' },
-      { name: 'React/Next.js', level: 'intermediate', icon: 'logos:react' },
       { name: 'TypeScript', level: 'advanced', icon: 'logos:typescript-icon' },
       { name: 'Tailwind CSS', level: 'expert', icon: 'logos:tailwindcss-icon' },
       { name: 'HTML/CSS', level: 'expert' }
@@ -220,6 +220,7 @@ const skillCategories = [
 ]
 
 const topSkills = [
+  { name: 'React/Next.js', percentage: 90 },
   { name: 'Vue.js/Nuxt.js', percentage: 90 },
   { name: 'TypeScript', percentage: 85 },
   { name: 'Tailwind CSS', percentage: 95 },

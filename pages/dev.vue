@@ -191,14 +191,14 @@ const experience = computed(() => [
     company: t('dev.experience.wiseutils.company'),
     url: 'https://wiseutils.com',
     description: t('dev.experience.wiseutils.description'),
-    tech: ['Vue.js', 'Nuxt', 'Node.js', 'AI Integration', 'WhatsApp API', 'Firebase'],
+    tech: ['React', 'Next.js', 'TypeScript', 'Node.js', 'AI Integration', 'WhatsApp API', 'Firebase'],
   },
   {
     year: t('dev.experience.meowtel.year'),
     role: t('dev.experience.meowtel.role'),
     company: t('dev.experience.meowtel.company'),
     description: t('dev.experience.meowtel.description'),
-    tech: ['Vue.js', 'Alpine.js', 'Tailwind CSS', 'PostHog', 'A/B Testing', 'CRO'],
+    tech: ['Vue.js', 'React', 'Next.js', 'Tailwind CSS', 'PostHog', 'A/B Testing', 'CRO'],
   },
   {
     year: t('dev.experience.asteroid.year'),
@@ -212,7 +212,7 @@ const experience = computed(() => [
     role: t('dev.experience.telco.role'),
     company: t('dev.experience.telco.company'),
     description: t('dev.experience.telco.description'),
-    tech: ['Vue.js', 'React Native', 'Vuetify', 'Pinia'],
+    tech: ['React', 'Next.js', 'React Native', 'Redux', 'Zustand'],
   },
 ])
 
@@ -285,7 +285,7 @@ const projects = computed(() => [
 const skills = computed(() => [
   {
     name: t('dev.skills.frontend'),
-    items: ['Vue.js', 'Nuxt', 'React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'HTML/CSS', 'Pinia', 'Alpine.js'],
+    items: ['React', 'Next.js', 'Vue.js', 'Nuxt', 'TypeScript', 'Tailwind CSS', 'HTML/CSS', 'Pinia'],
   },
   {
     name: t('dev.skills.backend'),
