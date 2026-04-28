@@ -26,13 +26,13 @@
       "description": "Portfolio website for architect Agustina Carbajal — a gallery-like digital space with bilingual support, designed to feel like walking through rooms of her work rather than scrolling a page."
     },
     "textTheCheck": {
-      "description": "Product design and development for an AI-powered WhatsApp bot that reads receipts and splits expenses — turning a messy problem into a clean, instant interaction."
+      "description": "Product design and development for an AI-driven expense tracker that meets you in chat — reads receipts, understands plain Spanish, and splits the bill instantly. A messy group dynamic, made clean."
     },
     "gastoObra": {
-      "description": "Product design and development for an AI-powered construction tracker — taking the chaos of a job site and turning it into a clean, real-time expense dashboard that builders and clients can both trust."
+      "description": "Product design and development for an AI-driven construction tracker — taking the chaos of a job site and turning it into a clean, real-time expense dashboard that builders and clients can both trust."
     },
     "routeAI": {
-      "description": "Product design and development for an AI-powered route planner — describe your stops in plain words, and Gemini figures out the optimal order and opens Google Maps with everything pre-filled."
+      "description": "Product design and development for an AI-driven route planner — describe your stops in plain words, and the system figures out the optimal order and opens Google Maps with everything pre-filled."
     }
   },
   "manifesto": {
@@ -46,7 +46,7 @@
   "about": {
     "sectionLabel": "About",
     "bio1": "I'm a frontend developer based in Buenos Aires with 4+ years building for startups and independent brands. I work across the JavaScript ecosystem — React, Next.js, Vue, Nuxt, TypeScript, and Tailwind — but what sets me apart is that I think like a designer and care like a founder.",
-    "bio2Before": "I've built e-commerce platforms, AI-powered WhatsApp bots, and brand identities from scratch. Currently co-founding",
+    "bio2Before": "I've built e-commerce platforms, AI-powered products, and brand identities from scratch. Currently co-founding",
     "bio2Link": "WiseUtils",
     "bio2After": "with Imanol, building AI-first solutions for small businesses."
   },

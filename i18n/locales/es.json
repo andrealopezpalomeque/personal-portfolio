@@ -26,13 +26,13 @@
       "description": "Sitio portfolio para la arquitecta Agustina Carbajal — un espacio digital con alma de galería y soporte bilingüe, diseñado para sentirse como recorrer las salas de su obra en vez de scrollear una página."
     },
     "textTheCheck": {
-      "description": "Diseño de producto y desarrollo de un bot de WhatsApp con IA que lee tickets y divide gastos — convirtiendo un problema engorroso en una interacción limpia e instantánea."
+      "description": "Diseño y desarrollo de producto para un tracker de gastos con IA que te encuentra en el chat — lee recibos, entiende español natural y divide la cuenta al instante. Una dinámica de grupo desordenada, hecha clara."
     },
     "gastoObra": {
-      "description": "Diseño de producto y desarrollo de un tracker de gastos de obra con IA — tomando el caos de una obra en marcha y convirtiéndolo en un tablero limpio y en tiempo real en el que constructores y clientes pueden confiar."
+      "description": "Diseño y desarrollo de producto para un tracker de construcción con IA — tomando el caos de una obra y convirtiéndolo en un dashboard de gastos en tiempo real, claro, en el que constructores y clientes pueden confiar."
     },
     "routeAI": {
-      "description": "Diseño de producto y desarrollo de un planificador de rutas con IA — describí tus paradas como se te ocurran, y Gemini calcula el orden óptimo y abre Google Maps con todo listo."
+      "description": "Diseño y desarrollo de producto para un planificador de rutas con IA — describí tus paradas en palabras simples, y el sistema calcula el orden óptimo y abre Google Maps con todo precargado."
     }
   },
   "manifesto": {
@@ -46,7 +46,7 @@
   "about": {
     "sectionLabel": "Sobre mí",
     "bio1": "Soy desarrolladora frontend en Buenos Aires con más de 4 años construyendo para startups y marcas independientes. Trabajo en todo el ecosistema JavaScript — React, Next.js, Vue, Nuxt, TypeScript y Tailwind — pero lo que me diferencia es que pienso como diseñadora y me involucro como fundadora.",
-    "bio2Before": "Construí plataformas e-commerce, bots de WhatsApp con IA e identidades de marca desde cero. Actualmente co-fundando",
+    "bio2Before": "Construí plataformas de e-commerce, productos con IA y identidades de marca desde cero. Actualmente co-fundando",
     "bio2Link": "WiseUtils",
     "bio2After": "con Imanol, creando soluciones AI-first para pequeñas empresas."
   },
