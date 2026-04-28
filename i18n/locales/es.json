@@ -65,13 +65,14 @@
     "skillsLabel": "Habilidades y Herramientas",
     "codeLink": "Código",
     "liveLink": "Demo",
+    "privateRepoBadge": "🔒 Repositorio privado — recorrido de arquitectura disponible bajo pedido",
     "footer": "© 2026 Andrea López Palomeque",
     "experience": {
       "wiseutils": {
         "year": "2025 — Presente",
         "role": "Co-founder & Developer",
         "company": "WiseUtils",
-        "description": "Co-fundé una empresa de software especializada en soluciones AI-first para pequeñas y medianas empresas. Desarrollo de bots de WhatsApp, plataformas e-commerce, sistemas de gestión de inventario, búsqueda con RAG y agentes de soporte inteligentes."
+        "description": "Cofundé un estudio de software que construye productos AI-first para pequeñas y medianas empresas. El trabajo abarca sistemas RAG con búsqueda vectorial, integraciones con Anthropic Claude, pipelines de recuperación personalizados y workflows agénticos — junto con plataformas de e-commerce, herramientas de inventario e interfaces conversacionales."
       },
       "meowtel": {
         "year": "2024 — 2025",
@@ -93,11 +94,15 @@
       }
     },
     "projects": {
+      "ideaRadar": {
+        "dateLabel": "2026 — En desarrollo",
+        "description": "Plataforma privada de conocimiento que convierte contenido curado en un segundo cerebro consultable. Los links y notas capturados se embeben con Voyage AI y se almacenan en Postgres + pgvector; las preguntas en lenguaje natural disparan recuperación semántica y son respondidas por Claude mediante un pipeline RAG personalizado. Construido como una única app Nuxt 3 + TypeScript sobre Supabase (auth + Postgres + pgvector), desplegado en Vercel."
+      },
       "textTheCheck": {
-        "description": "Compañero financiero WhatsApp-first con dos modos: seguimiento colaborativo de gastos de viaje y seguimiento personal de cuentas. Construido con WhatsApp Business API y Gemini AI para parseo en español argentino."
+        "description": "Compañero financiero WhatsApp-first que convierte recibos y texto libre en español en datos de gastos estructurados mediante un pipeline de extracción en lenguaje natural (Gemini AI) sobre un stack Nuxt + Express. Modos duales para división colaborativa de gastos en viajes y seguimiento personal."
       },
       "gastoObra": {
-        "description": "Plataforma de gestión de gastos de obra. Los usuarios registran gastos por WhatsApp usando lenguaje natural parseado por Gemini AI, con un dashboard web para insights en tiempo real e informes financieros."
+        "description": "Plataforma de gestión de gastos de construcción. Los equipos de obra registran gastos a través de un pipeline de lenguaje natural (Gemini AI) en WhatsApp, y un dashboard web expone insights en tiempo real y reportes financieros para constructores y clientes."
       },
       "elGranPeon": {
         "description": "Identidad de marca completa y plataforma e-commerce para una marca argentina de artículos artesanales. Tienda para clientes más back-office completo para gestión de inventario y control de stock."
@@ -119,9 +124,10 @@
       }
     },
     "skills": {
+      "ai": "AI y Datos",
       "frontend": "Frontend",
-      "backend": "Backend y Datos",
-      "tools": "Herramientas y Otros"
+      "backend": "Backend",
+      "tools": "Herramientas y Prácticas"
     }
   },
   "seo": {

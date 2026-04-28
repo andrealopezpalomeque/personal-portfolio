@@ -95,7 +95,7 @@
         >
           <div class="flex items-baseline justify-between mb-2">
             <h3 class="font-sans text-text-primary text-base md:text-lg font-medium">{{ project.title }}</h3>
-            <span class="font-sans text-text-muted text-xs">{{ formatDate(project.completedDate) }}</span>
+            <span class="font-sans text-text-muted text-xs">{{ project.displayDate || formatDate(project.completedDate) }}</span>
           </div>
           <p class="font-sans text-text-secondary text-sm leading-relaxed mb-4">{{ project.description }}</p>
           <div class="flex flex-wrap gap-1.5 mb-4">
@@ -111,6 +111,7 @@
           </div>
           <div class="flex gap-4">
             <a
+              v-if="project.githubUrl"
               :href="project.githubUrl"
               target="_blank"
               rel="noopener noreferrer"
@@ -123,6 +124,10 @@
               rel="noopener noreferrer"
               class="font-sans text-xs font-medium uppercase tracking-[0.15em] text-text-muted hover:text-text-primary transition-colors duration-300"
             >{{ $t('dev.liveLink') }} &rarr;</a>
+            <span
+              v-if="!project.githubUrl && !project.liveUrl"
+              class="font-sans text-xs text-text-muted tracking-[0.02em]"
+            >{{ $t('dev.privateRepoBadge') }}</span>
           </div>
         </div>
       </div>
@@ -191,7 +196,7 @@ const experience = computed(() => [
     company: t('dev.experience.wiseutils.company'),
     url: 'https://wiseutils.com',
     description: t('dev.experience.wiseutils.description'),
-    tech: ['React', 'Next.js', 'TypeScript', 'Node.js', 'AI Integration', 'WhatsApp API', 'Firebase'],
+    tech: ['Anthropic Claude API', 'RAG', 'Vector embeddings', 'pgvector', 'Supabase', 'Nuxt', 'Next.js', 'TypeScript', 'Node.js'],
   },
   {
     year: t('dev.experience.meowtel.year'),
@@ -217,6 +222,13 @@ const experience = computed(() => [
 ])
 
 const projects = computed(() => [
+  {
+    id: 'idea-radar',
+    title: 'Idea Radar',
+    description: t('dev.projects.ideaRadar.description'),
+    technologies: ['Nuxt 3', 'TypeScript', 'Anthropic Claude API', 'RAG', 'Supabase', 'Postgres', 'pgvector', 'Voyage embeddings', 'Vercel'],
+    displayDate: t('dev.projects.ideaRadar.dateLabel'),
+  },
   {
     id: '1',
     title: 'Text the Check',
@@ -284,16 +296,20 @@ const projects = computed(() => [
 
 const skills = computed(() => [
   {
+    name: t('dev.skills.ai'),
+    items: ['Anthropic Claude API', 'Gemini', 'RAG', 'Vector embeddings (Voyage)', 'pgvector', 'Semantic search', 'Prompt engineering', 'Supabase', 'PostgreSQL', 'MongoDB'],
+  },
+  {
     name: t('dev.skills.frontend'),
     items: ['React', 'Next.js', 'Vue.js', 'Nuxt', 'TypeScript', 'Tailwind CSS', 'HTML/CSS', 'Pinia'],
   },
   {
     name: t('dev.skills.backend'),
-    items: ['Node.js', 'Express', 'Firebase', 'REST APIs', 'PostgreSQL', 'MongoDB', 'Python'],
+    items: ['Node.js', 'Express', 'Firebase', 'REST APIs', 'Python'],
   },
   {
     name: t('dev.skills.tools'),
-    items: ['Git', 'Figma', 'Postman', 'Vercel', 'Render', 'AI Integration', 'WhatsApp API', 'A/B Testing', 'PostHog'],
+    items: ['Git', 'Figma', 'Postman', 'Vercel', 'Render', 'A/B Testing', 'PostHog', 'Core Web Vitals'],
   },
 ])
 

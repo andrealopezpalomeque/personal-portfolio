@@ -65,13 +65,14 @@
     "skillsLabel": "Skills & Tools",
     "codeLink": "Code",
     "liveLink": "Live",
+    "privateRepoBadge": "🔒 Private repo — architecture walkthrough on request",
     "footer": "© 2026 Andrea López Palomeque",
     "experience": {
       "wiseutils": {
         "year": "2025 — Present",
         "role": "Co-founder & Developer",
         "company": "WiseUtils",
-        "description": "Co-founded a software company specializing in AI-first solutions for small and medium-sized businesses. Building WhatsApp bots, e-commerce platforms, inventory management systems, RAG-powered search, and intelligent support agents."
+        "description": "Co-founded a software studio building AI-first products for small and medium businesses. Work spans RAG systems with vector search, Anthropic Claude integrations, custom retrieval pipelines, and agentic workflows — alongside e-commerce platforms, inventory tools, and conversational interfaces."
       },
       "meowtel": {
         "year": "2024 — 2025",
@@ -93,11 +94,15 @@
       }
     },
     "projects": {
+      "ideaRadar": {
+        "dateLabel": "2026 — In development",
+        "description": "Private knowledge platform that turns curated content into a queryable second brain. Captured links and notes are embedded with Voyage AI and stored in Postgres + pgvector; natural-language questions trigger semantic retrieval and are answered by Claude through a custom RAG pipeline. Built as a single Nuxt 3 + TypeScript app on Supabase (auth + Postgres + pgvector), deployed on Vercel."
+      },
       "textTheCheck": {
-        "description": "WhatsApp-first financial companion with dual modes: collaborative trip expense tracking and personal bill tracking. Built with WhatsApp Business API and Gemini AI for Argentine Spanish parsing."
+        "description": "WhatsApp-first financial companion that turns receipts and freeform Spanish text into structured expense data through a natural-language extraction pipeline (Gemini AI) over a Nuxt + Express stack. Dual modes for collaborative trip splitting and personal tracking."
       },
       "gastoObra": {
-        "description": "Construction expense management platform. Users log expenses via WhatsApp using natural language parsed by Gemini AI, with a web dashboard for real-time insights and financial reports."
+        "description": "Construction expense management platform. Site teams log expenses through a natural-language pipeline (Gemini AI) on WhatsApp, and a web dashboard surfaces real-time insights and financial reports for builders and clients."
       },
       "elGranPeon": {
         "description": "Full brand identity and e-commerce platform for an Argentine artisanal goods brand. Customer-facing storefront plus complete back-office for inventory management and stock control."
@@ -119,9 +124,10 @@
       }
     },
     "skills": {
+      "ai": "AI & Data",
       "frontend": "Frontend",
-      "backend": "Backend & Data",
-      "tools": "Tools & Other"
+      "backend": "Backend",
+      "tools": "Tools & Practice"
     }
   },
   "seo": {
