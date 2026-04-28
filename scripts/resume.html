@@ -202,12 +202,13 @@
 
 <h2>Summary</h2>
 <p class="summary">
-  Frontend developer with 4+ years in fast-moving startups, now co-founding <a href="https://wiseutils.com">WiseUtils</a> — an AI-first studio shipping WhatsApp bots, e-commerce, and intelligent agents for small businesses. I build clean, accessible UIs with a strong eye for product detail, collaborate closely with design and product, and ship to real users. Expanding backend foundations (Node.js, Express, Firebase) through production work while pursuing a Software Engineering degree.
+  Frontend developer with 4+ years in fast-moving startups, now co-founding <a href="https://wiseutils.com">WiseUtils</a> — an AI-first studio shipping RAG systems, Claude integrations, e-commerce, and intelligent agents for small businesses. I build clean, accessible UIs with a strong eye for product detail, collaborate closely with design and product, and ship to real users. Expanding backend and AI foundations through production work while pursuing a Software Engineering degree.
 </p>
 
 <h2>Skills</h2>
+<div class="skills-line"><span class="label">AI &amp; Data:</span> <span class="value">Anthropic Claude API, Gemini, RAG, Vector embeddings (Voyage), pgvector, Semantic search, Prompt engineering, Supabase, PostgreSQL</span></div>
 <div class="skills-line"><span class="label">Core:</span> <span class="value">TypeScript, JavaScript, React, Next.js, Vue.js, Nuxt, Tailwind CSS, Node.js, Express, Firebase / Firestore</span></div>
-<div class="skills-line"><span class="label">Tools &amp; Practices:</span> <span class="value">AI Integration (Gemini), WhatsApp Business API, Git / GitHub, A/B Testing, PostHog, Sentry, Google Analytics, Core Web Vitals, Accessibility</span></div>
+<div class="skills-line"><span class="label">Tools &amp; Practices:</span> <span class="value">WhatsApp Business API, Git / GitHub, A/B Testing, PostHog, Sentry, Google Analytics, Core Web Vitals, Accessibility</span></div>
 <div class="skills-line"><span class="label">Languages:</span> <span class="value">Spanish (Native), English (C2 Proficient)</span></div>
 
 <h2>Experience</h2>
@@ -218,8 +219,8 @@
     <div class="entry-dates">08/2025 — Present</div>
   </div>
   <ul>
-    <li>Co-founded an AI-first software studio for small and medium-sized businesses. Ship WhatsApp bots, e-commerce platforms, inventory systems, RAG-powered search, and intelligent support agents to production.</li>
-    <li>Lead frontend and product design across the portfolio; contribute to backend and integrations with Node.js, Express, Firebase, Gemini AI, and the WhatsApp Business API.</li>
+    <li>Co-founded an AI-first software studio for small and medium-sized businesses. Ship RAG systems with vector search, Anthropic Claude integrations, custom retrieval pipelines, and agentic workflows alongside e-commerce, inventory, and conversational tools.</li>
+    <li>Lead frontend and product design across the portfolio; contribute to backend and AI integrations across the Anthropic SDK, Supabase + pgvector, Gemini AI, and the WhatsApp Business API.</li>
   </ul>
 </div>
 
@@ -259,14 +260,20 @@
 <h2>Projects</h2>
 
 <div class="project">
+<div><span class="project-name">Idea Radar</span><span class="project-dates">2026 — In development</span></div>
+<p class="project-desc">Private knowledge platform that turns curated content into a queryable second brain. Voyage AI embeds captures into Postgres + pgvector; Claude answers natural-language questions through a custom RAG pipeline.</p>
+<div class="project-tech">Tech: Nuxt 3, TypeScript, Anthropic Claude API, RAG, Supabase, Postgres, pgvector, Voyage embeddings, Vercel &nbsp;|&nbsp; <span class="links">🔒 Private repo</span></div>
+</div>
+
+<div class="project">
   <div><span class="project-name">Text the Check</span><span class="project-dates">2025 – 2026</span></div>
-  <p class="project-desc">Collaborative expense tracker for group trips via WhatsApp chatbot. Real-time balances, USD/ARS currency conversion, and PDF/Excel export. Currently in closed beta with real users.</p>
+  <p class="project-desc">WhatsApp-first financial companion that turns receipts and freeform Spanish text into structured expense data through a natural-language extraction pipeline (Gemini AI). In closed beta with real users.</p>
   <div class="project-tech">Tech: Nuxt, Vue 3, Tailwind, Pinia, Node.js, Express, Firebase, WhatsApp Business API, Gemini AI &nbsp;|&nbsp; <span class="links"><a href="https://textthecheck.app">Live</a> · <a href="https://github.com/andrealopezpalomeque/text-the-check">Code</a></span></div>
 </div>
 
 <div class="project">
   <div><span class="project-name">Gasto Obra</span><span class="project-dates">Feb 2026</span></div>
-  <p class="project-desc">Construction expense management platform. Users log expenses via WhatsApp in natural language; Gemini AI parses them into a real-time web dashboard with financial reports for builders and clients.</p>
+  <p class="project-desc">Construction expense management platform. Site teams log expenses on WhatsApp using natural language; Gemini AI feeds a real-time web dashboard with financial reports.</p>
   <div class="project-tech">Tech: Nuxt 3, Vue 3, Tailwind, Express.js, Firebase, WhatsApp Bot, Gemini AI &nbsp;|&nbsp; <span class="links"><a href="https://gastoobra.wiseutils.com/">Live</a> · <a href="https://github.com/imanolcorimayo/gasto-obra">Code</a></span></div>
 </div>
 
@@ -274,18 +281,6 @@
   <div><span class="project-name">El Gran Peón</span><span class="project-dates">Feb 2026</span></div>
   <p class="project-desc">Full brand identity and e-commerce for an Argentine artisanal goods brand (mates, leather). Customer-facing storefront plus a complete back-office for inventory and stock management.</p>
   <div class="project-tech">Tech: Nuxt, Vue 3, Tailwind, TypeScript, Node.js, Express, Firebase, Render &nbsp;|&nbsp; <span class="links"><a href="https://elgranpeon.com">Live</a> · <a href="https://github.com/andrealopezpalomeque/el-gran-peon">Code</a></span></div>
-</div>
-
-<div class="project">
-  <div><span class="project-name">Route AI</span><span class="project-dates">Mar 2026</span></div>
-  <p class="project-desc">Natural-language route planner PWA. Describe stops by text or voice; Gemini AI extracts and optimizes them, then opens Google Maps pre-filled. Server-side AI calls for secure key handling.</p>
-  <div class="project-tech">Tech: Nuxt 4, Vue 3, TypeScript, Express.js, Gemini AI, Pinia, PWA, Firebase, Web Speech API &nbsp;|&nbsp; <span class="links"><a href="https://routeai.tech">Live</a> · <a href="https://github.com/andrealopezpalomeque/route-ai">Code</a></span></div>
-</div>
-
-<div class="project">
-  <div><span class="project-name">Cruzar Deportes</span><span class="project-dates">2025</span></div>
-  <p class="project-desc">E-commerce for sports jerseys: catalog, cart, advanced search &amp; filtering, admin back-office, and Cloudinary image integration.</p>
-  <div class="project-tech">Tech: Nuxt 4, Vue 3, TypeScript, Tailwind, Pinia, Firebase, Cloudinary &nbsp;|&nbsp; <span class="links"><a href="https://deportes-cruzar.web.app/">Live</a> · <a href="https://github.com/andrealopezpalomeque/cruzar-deportes/">Code</a></span></div>
 </div>
 
 <h2>Education</h2>
